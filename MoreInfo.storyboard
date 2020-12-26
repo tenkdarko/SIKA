@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="vGd-xL-pvv">
+            <objects>
+                <viewController id="SEJ-vh-Rru" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TRp-8l-YJr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KiF-P7-Udw">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Why do I not receive compensation from invited friends?">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" metaFont="system" size="20"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+Your share, which you get from the earnings of your invited friends, you receive only on completed surveys. You don't get a share from consolation prizes or the first start poll.
+ 
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" metaFont="menu" size="14"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Where are my coins?">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" metaFont="system" size="22"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+To view the current status of offers completed, please scroll down to support on the offer wall page</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" metaFont="menu" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+IAo
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Where can I delete my data?">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="22" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+On the tab Account you will find the possibility to delete your data. Please note that this will also delete your account, as it is directly linked to your data. We assume with your deletion that you no longer want to use the app. </string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" metaFont="menu" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+IAo
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" metaFont="menu" size="14"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="What data will SIKA collect?">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" metaFont="system" size="20"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+On the tab Account you will find the possibility to request your data. We will list the data we have collected about you. All data from qualifications are only stored locally on your device. Information that you have provided in surveys by our survey partners is not stored by us. If you have a question regarding completed surveys, please contact the survey partner who was displayed to you before the survey.
+
+For Suggestions and feedback please email us - sikacoinsapp@gmail.com
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" metaFont="menu" size="14"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="AYx-pT-5pd" firstAttribute="bottom" secondItem="KiF-P7-Udw" secondAttribute="bottom" id="KQn-Ts-3xx"/>
+                            <constraint firstItem="AYx-pT-5pd" firstAttribute="trailing" secondItem="KiF-P7-Udw" secondAttribute="trailing" id="eK7-Eb-CFN"/>
+                            <constraint firstItem="KiF-P7-Udw" firstAttribute="leading" secondItem="AYx-pT-5pd" secondAttribute="leading" id="lMz-MD-kIA"/>
+                            <constraint firstItem="KiF-P7-Udw" firstAttribute="top" secondItem="AYx-pT-5pd" secondAttribute="top" id="laj-c8-6BJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AYx-pT-5pd"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="a4g-lx-tRN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j7r-kQ-acW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1705" y="224"/>
+        </scene>
+        <!--PreLogin-->
+        <scene sceneID="R0a-wR-y0T">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="PreLogin" storyboardName="PreLogin" id="Kgp-4A-nDS" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="UKG-Ny-bIM"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s7w-QB-3EI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-147" y="515"/>
+        </scene>
+        <!--More Info-->
+        <scene sceneID="3Pb-H9-NwR">
+            <objects>
+                <viewController storyboardIdentifier="account" id="f8o-C1-aZg" customClass="MoreInfo" customModule="Sika" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uqa-yk-G54">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dp3-T6-tAF">
+                                <rect key="frame" x="1" y="45" width="412" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.23921568630000001" green="0.2784313725" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <textAttributes key="largeTitleTextAttributes">
+                                    <color key="textColor" red="0.43529411759999997" green="0.59607843140000005" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="textShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="$IKA" id="B9M-ed-gUf">
+                                        <barButtonItem key="rightBarButtonItem" style="plain" id="hES-9A-cpY">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ack-JB-uMa">
+                                                <rect key="frame" x="301" y="7" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Cancel">
+                                                    <color key="titleColor" red="0.23921568630000001" green="0.2784313725" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="trueCancel:" destination="f8o-C1-aZg" eventType="touchUpInside" id="jdF-4v-MDg"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VhQ-32-Yen">
+                                <rect key="frame" x="0.0" y="89" width="414" height="774"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TOP-fJ-SBc">
+                                        <rect key="frame" x="0.0" y="1" width="412" height="706"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d4n-BQ-xhM" userLabel="topData">
+                                                <rect key="frame" x="8" y="20" width="396" height="223"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9G-5K-7PZ">
+                                                        <rect key="frame" x="8" y="8" width="133" height="36"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here are all the information we store about you" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4QZ-MM-fzM">
+                                                        <rect key="frame" x="8" y="52" width="265" height="15"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bFu-j6-iCN">
+                                                        <rect key="frame" x="8" y="75" width="380" height="75"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hz6-Ie-XD1">
+                                                                <rect key="frame" x="5" y="8" width="69" height="24"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00000-00-0000-000000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzJ-hW-Sov">
+                                                                <rect key="frame" x="5" y="37" width="146" height="15"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Needed to identify you as a user" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u4g-qM-1R8">
+                                                                <rect key="frame" x="5" y="57" width="183.5" height="15"/>
+                                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstItem="dzJ-hW-Sov" firstAttribute="top" secondItem="hz6-Ie-XD1" secondAttribute="bottom" constant="5" id="1VT-ao-BVq"/>
+                                                            <constraint firstItem="u4g-qM-1R8" firstAttribute="top" secondItem="dzJ-hW-Sov" secondAttribute="bottom" constant="5" id="4h4-Yv-4lO"/>
+                                                            <constraint firstItem="dzJ-hW-Sov" firstAttribute="leading" secondItem="bFu-j6-iCN" secondAttribute="leading" constant="5" id="Hrk-4M-ytf"/>
+                                                            <constraint firstItem="hz6-Ie-XD1" firstAttribute="leading" secondItem="bFu-j6-iCN" secondAttribute="leading" constant="5" id="PFf-eP-6c0"/>
+                                                            <constraint firstItem="u4g-qM-1R8" firstAttribute="leading" secondItem="bFu-j6-iCN" secondAttribute="leading" constant="5" id="p9W-jU-2Zi"/>
+                                                            <constraint firstItem="hz6-Ie-XD1" firstAttribute="top" secondItem="bFu-j6-iCN" secondAttribute="top" constant="8" id="qkP-MR-aa5"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yai-jL-uNr" customClass="RoundButton" customModule="Sika" customModuleProvider="target">
+                                                        <rect key="frame" x="313" y="7" width="75" height="31"/>
+                                                        <color key="backgroundColor" red="1" green="0.38823529410000002" blue="0.2784313725" alpha="0.89233732880000005" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="31" id="f3I-VK-Joc"/>
+                                                            <constraint firstAttribute="width" constant="75" id="owL-CL-b27"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="13"/>
+                                                        <state key="normal" title="Delete">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="6"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="0.0"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="deleteAccount:" destination="f8o-C1-aZg" eventType="touchUpInside" id="3KG-Wz-3Vm"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgK-60-RDJ" customClass="RoundButton" customModule="Sika" customModuleProvider="target">
+                                                        <rect key="frame" x="70" y="158" width="256" height="40"/>
+                                                        <color key="backgroundColor" red="0.23921568630000001" green="0.2784313725" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="F9z-lU-LoF"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="13"/>
+                                                        <state key="normal" title="Payout History">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="6"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="0.0"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <segue destination="FfL-nG-hEX" kind="show" id="j3u-fO-uks"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="yai-jL-uNr" secondAttribute="trailing" constant="8" id="36I-qp-oWb"/>
+                                                    <constraint firstItem="4QZ-MM-fzM" firstAttribute="top" secondItem="X9G-5K-7PZ" secondAttribute="bottom" constant="8" id="B8I-MY-9uD"/>
+                                                    <constraint firstItem="4QZ-MM-fzM" firstAttribute="leading" secondItem="d4n-BQ-xhM" secondAttribute="leadingMargin" id="Dgb-UQ-OnT"/>
+                                                    <constraint firstItem="4QZ-MM-fzM" firstAttribute="leading" secondItem="X9G-5K-7PZ" secondAttribute="leading" id="I5g-jl-P9d"/>
+                                                    <constraint firstItem="cgK-60-RDJ" firstAttribute="leading" secondItem="d4n-BQ-xhM" secondAttribute="leading" constant="70" id="Ilc-0a-iae"/>
+                                                    <constraint firstAttribute="bottom" secondItem="cgK-60-RDJ" secondAttribute="bottom" constant="25" id="N3e-Dm-6xe"/>
+                                                    <constraint firstItem="4QZ-MM-fzM" firstAttribute="top" secondItem="d4n-BQ-xhM" secondAttribute="top" constant="52" id="OYd-qA-v1h"/>
+                                                    <constraint firstItem="bFu-j6-iCN" firstAttribute="top" secondItem="4QZ-MM-fzM" secondAttribute="bottom" constant="8" id="P4j-hY-D3A"/>
+                                                    <constraint firstItem="cgK-60-RDJ" firstAttribute="top" secondItem="bFu-j6-iCN" secondAttribute="bottom" constant="8" id="PwH-wy-XUT"/>
+                                                    <constraint firstItem="yai-jL-uNr" firstAttribute="top" secondItem="d4n-BQ-xhM" secondAttribute="top" constant="7" id="Q53-fb-cb7"/>
+                                                    <constraint firstAttribute="trailing" secondItem="cgK-60-RDJ" secondAttribute="trailing" constant="70" id="TQB-2k-1uA"/>
+                                                    <constraint firstAttribute="trailing" secondItem="bFu-j6-iCN" secondAttribute="trailing" constant="8" id="ZBc-d4-l73"/>
+                                                    <constraint firstItem="bFu-j6-iCN" firstAttribute="leading" secondItem="d4n-BQ-xhM" secondAttribute="leading" constant="8" id="b7g-JS-gYz"/>
+                                                    <constraint firstItem="cgK-60-RDJ" firstAttribute="centerX" secondItem="d4n-BQ-xhM" secondAttribute="centerX" id="d8q-CM-eDt"/>
+                                                    <constraint firstAttribute="height" constant="223" id="pV9-e8-26z"/>
+                                                </constraints>
+                                            </view>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jgw-Gd-Qzi">
+                                                <rect key="frame" x="8" y="251" width="396" height="455"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <prototypes>
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="infoCell" id="GBk-iz-3b1" customClass="InfoTableViewCell" customModule="Sika" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="28" width="396" height="43.5"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GBk-iz-3b1" id="Npx-Bw-oOZ">
+                                                            <rect key="frame" x="0.0" y="0.0" width="365" height="43.5"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1H-YZ-0iF">
+                                                                    <rect key="frame" x="20" y="11" width="42" height="21.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="g1H-YZ-0iF" firstAttribute="top" secondItem="Npx-Bw-oOZ" secondAttribute="topMargin" id="LSv-W7-iv5"/>
+                                                                <constraint firstItem="g1H-YZ-0iF" firstAttribute="leading" secondItem="Npx-Bw-oOZ" secondAttribute="leadingMargin" id="TYt-I9-ALH"/>
+                                                                <constraint firstItem="g1H-YZ-0iF" firstAttribute="centerY" secondItem="Npx-Bw-oOZ" secondAttribute="centerY" id="aD0-DI-gJ1"/>
+                                                            </constraints>
+                                                        </tableViewCellContentView>
+                                                        <connections>
+                                                            <outlet property="label" destination="g1H-YZ-0iF" id="oGp-M2-ww9"/>
+                                                        </connections>
+                                                    </tableViewCell>
+                                                </prototypes>
+                                            </tableView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="jgw-Gd-Qzi" firstAttribute="leading" secondItem="TOP-fJ-SBc" secondAttribute="leading" constant="8" id="761-T0-lgz"/>
+                                            <constraint firstAttribute="trailing" secondItem="jgw-Gd-Qzi" secondAttribute="trailing" constant="8" id="DdW-oo-Hhi"/>
+                                            <constraint firstItem="d4n-BQ-xhM" firstAttribute="top" secondItem="TOP-fJ-SBc" secondAttribute="top" constant="20" id="Nh7-u4-TcJ"/>
+                                            <constraint firstItem="d4n-BQ-xhM" firstAttribute="leading" secondItem="TOP-fJ-SBc" secondAttribute="leading" constant="8" id="W5W-h6-i0J"/>
+                                            <constraint firstAttribute="bottom" secondItem="jgw-Gd-Qzi" secondAttribute="bottom" id="ank-b7-z44"/>
+                                            <constraint firstAttribute="trailing" secondItem="d4n-BQ-xhM" secondAttribute="trailing" constant="8" id="dGH-Nx-h7b"/>
+                                            <constraint firstItem="jgw-Gd-Qzi" firstAttribute="top" secondItem="d4n-BQ-xhM" secondAttribute="bottom" constant="8" id="sHg-ok-TUV"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="TOP-fJ-SBc" secondAttribute="bottom" constant="1" id="AZl-BO-NQy"/>
+                                    <constraint firstAttribute="trailing" secondItem="TOP-fJ-SBc" secondAttribute="trailing" constant="20" symbolic="YES" id="Jm1-0Q-9ao"/>
+                                    <constraint firstItem="4F4-ke-WQP" firstAttribute="trailing" secondItem="TOP-fJ-SBc" secondAttribute="trailing" constant="2" id="XbM-PX-wUr"/>
+                                    <constraint firstItem="TOP-fJ-SBc" firstAttribute="top" secondItem="VhQ-32-Yen" secondAttribute="top" constant="1" id="cEP-YH-olO"/>
+                                    <constraint firstItem="4F4-ke-WQP" firstAttribute="bottom" secondItem="TOP-fJ-SBc" secondAttribute="bottom" constant="67" id="k4b-rG-t0f"/>
+                                    <constraint firstItem="TOP-fJ-SBc" firstAttribute="leading" secondItem="VhQ-32-Yen" secondAttribute="leading" id="wWB-c7-Hmj"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="xUe-M4-Cmr"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="4F4-ke-WQP"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VhQ-32-Yen" firstAttribute="leading" secondItem="KIb-ZP-d91" secondAttribute="leading" id="0LF-gU-jx2"/>
+                            <constraint firstItem="VhQ-32-Yen" firstAttribute="trailing" secondItem="KIb-ZP-d91" secondAttribute="trailing" id="KnS-RS-kfU"/>
+                            <constraint firstItem="dp3-T6-tAF" firstAttribute="top" secondItem="KIb-ZP-d91" secondAttribute="top" constant="1" id="SBI-FK-0Af"/>
+                            <constraint firstItem="VhQ-32-Yen" firstAttribute="bottom" secondItem="KIb-ZP-d91" secondAttribute="bottom" constant="1" id="WBm-0i-Ng5"/>
+                            <constraint firstItem="VhQ-32-Yen" firstAttribute="top" secondItem="dp3-T6-tAF" secondAttribute="bottom" id="YrX-Z8-S9U"/>
+                            <constraint firstItem="KIb-ZP-d91" firstAttribute="trailing" secondItem="dp3-T6-tAF" secondAttribute="trailing" constant="1" id="p4B-gp-l2P"/>
+                            <constraint firstItem="dp3-T6-tAF" firstAttribute="leading" secondItem="KIb-ZP-d91" secondAttribute="leading" constant="1" id="vgj-k5-es8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KIb-ZP-d91"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vd9-x0-Wdt"/>
+                    <connections>
+                        <outlet property="infoTable" destination="jgw-Gd-Qzi" id="jQT-sa-2jX"/>
+                        <outlet property="topData" destination="d4n-BQ-xhM" id="116-KE-Eje"/>
+                        <outlet property="uuidLabel" destination="dzJ-hW-Sov" id="CdJ-57-upV"/>
+                        <segue destination="EK4-SP-hK8" kind="show" identifier="tos" id="Lnw-Bo-1vx"/>
+                        <segue destination="bdu-nI-gkt" kind="show" identifier="privacy" id="QDF-eL-t6h"/>
+                        <segue destination="SEJ-vh-Rru" kind="show" identifier="faq" id="41N-BF-EO7"/>
+                        <segue destination="Kgp-4A-nDS" kind="show" identifier="makedecision" id="f7s-ZC-bBT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E5o-L5-OwW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="779.71014492753625" y="623.4375"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7UP-DN-RYg">
+            <objects>
+                <viewController id="EK4-SP-hK8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iJF-EP-4tA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ThX-VH-m7m">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">§ 1 Contractual Partner
+1.1 These Terms and Conditions apply to all legal transactions between Sika, hereinafter referred to as "Sika" or "we", and its contractual partner, hereinafter referred to as "User" or "You", which are concluded through Sika.
+1.2 These Terms and Conditions apply regardless of whether you are a consumer, entrepreneur or merchant. Should there be any legal peculiarities in relation to consumers, we will point this out in these GTC.
+1.3 A consumer is any natural person who concludes a legal transaction for purposes that are predominantly neither commercial nor their independent professional activity (§ 13 BGB, definition according to German law). Entrepreneur is a natural or legal person or a partnership with legal capacity who, when concluding a legal transaction, acts in the exercise of their commercial or independent professional activity (§ 14 BGB, definition according to German law).
+§ 2 How Sika works
+2.1 As a user of Sika, you can participate in various selected market research surveys, which we ourselves post on Sika or have posted through our partners.
+2.2 Our app or the technical backend of our app ("network") is connected to various market research companies, marketplaces and enterprises (collectively "marketplaces"). These marketplaces regularly create surveys for their customers (companies). For these surveys, the marketplaces are looking for participants to participate in the surveys. To support the marketplaces in their search for participants, we have built our app with the Sika service. We bring the marketplaces looking for participants together with the users, i.e. you.
+2.3 As a user of the App, we only collect your UUID to identify your phone.
+2.4 If you are eligible for a survey because the qualifications required by the marketplaces and the qualifications you have stored match, you have the opportunity to participate in the survey. If you decide to participate, we will pass on the matching qualifications to the marketplace. The survey itself is either conducted in our app itself or on the marketplace website or the website of the market research company or a company. A link in our app will connect you directly to the survey. You have no right to participate in a survey. The participants are finally selected by us or the marketplace.
+2.5 With each successful and completed participation in a survey you will receive credits ("cash"). You can collect these credits and, when you have reached the corresponding values, exchange them for a cash payout or for the allocation of credits from our partners (both together "Reward"). You can check the amount of your credits at any time in your user account. You can also view our current partner portfolio in our app at any time.
+§ 3 Registration and creation of a user account
+3.1 In order to use our app, your free registration as a user is required. Only natural persons with unlimited legal capacity may register as users.
+3.2 The user contract is concluded when we confirm the registration and activate your user account.
+3.3 Each user may only register once.
+3.4 We have the right to exclude you from the use of our services and to delete your user account if we have reasonable grounds to suspect that you have (have) violated the essential obligations of these Terms and Conditions. We will inform you about this exclusion and give you the opportunity to comment. In any case, we will take your legitimate interests into account and enable you to exchange your credits for vouchers. The right to extraordinary termination remains unaffected.
+§ 4 Account balance and terms of payment
+4.1 Your account balance is shown in "Cash". This indication is a virtual currency and does not imply any claim to the amount in cash or any other national or virtual currency. A sufficient amount of "Cash" may result in a payout in cash or the right to exchange it for vouchers. Possession of "Cash" does not imply a right to conversion at any time unless appropriate thresholds for an appropriate method of withdrawal are reached.
+4.2 After the necessary amount of "Cash" has been earned for the offered payouts or exchanges into vouchers ("Reward"), the User may request one of the listed Rewards. The following aspects are binding for all users of Sika.
+a) Understand the meaning of "Cash". "Cash" is only an indicator of progress to the next opportunity to receive a reward. Based on the displayed "Cash", there is no entitlement to a reward as long as the payout limits are not reached. The thresholds to be reached to claim a reward vary depending on the reward method. The individual current minimum amounts for rewards can be seen in the app by selecting the respective reward method. There is no way to convert remaining "cash" or any amount of "cash" into rewards or payouts into cash.
+b) Once a Reward has been requested, we will check the request for legality. In case of suspected fraud or breach of these terms and conditions, we reserve the right to delay or stop the payment of the Reward. We are not obliged to prove the user's guilt in order to be able to initiate sanctioning consequences. In addition, a comparison of a reward request with the fraud reports regularly sent by our survey partners (including marketplaces) will take place. If the partner refuses the survey results of individual users and thus also rewards us for these due to poor quality or other reasons, we will deduct the "cash" unjustly earned by the respective users in the amount of the amount shown in the fraud suspicion reports. If the Reward has already been paid out before the deduction based on the Fraud Suspicion Report could be made, we may charge the user account with a negative "Cash" balance.
+c) We try to process the reward within the first 5 working days after the request. In case of suspected fraud, we reserve the right to delay the payment of the reward indefinitely. For users whose user behaviour turns out to be legal and innocent in the course of the investigation, there is no claim for compensation due to the delay.
+d) Not every payment method is available in every country. We try to present this as clearly as possible. If a user has chosen a reward method that is not available, we are not obliged to implement it. We may refer to alternative reward methods, but we are not obliged to offer alternatives requested by the user.
+e) After receiving a reward, the user account may not be deleted directly. For data protection reasons, we must delete your email address from our servers as soon as you have deleted your data or the app itself. Delete your account or your data after you have requested a reward, but before the reward has arrived, the payout can no longer be assigned and therefore expires.
+§ 5 Rules of use
+5.1 The use of Sika is bound to the following rules:
+a) The use of "bot-controlled" software, elements, apps etc. in any form is prohibited. Only the use by a natural person via a smartphone or tablet is allowed.
+b) Each user may use Sika only on one terminal device. The systematic use on several devices is prohibited.
+c) The use of Sika is only allowed in the home country of the user. The use of services such as fake GPS, VPN or similar are prohibited while using Sika.
+d) The in-App currency "Cash" (coins) can only be earned through the channels provided in the App. These ways are watching videos, completing "offers" from the "Offerwalls" or the complete participation including the completion of surveys. Any attempt to fake cash by modifying settings or the network connection is prohibited. Failure to comply with the rules and restrictions will result in strict sanctions, which may include deletion of the user account, resetting the "Cash" amount earned through prohibited means, and withholding the rewards requested by the prohibited use.
+e) The use of Sika is permitted from the age of 16 years or older. The age of the user is queried before using the app and must be answered correctly. A wrong answer will result in the blocking and deletion of the user account.
+5.2 Users are prohibited from spreading insulting, aggressive, violence glorifying or other legally prohibited expressions, sentences or messages in the form of comments, pictures or other media in the context of Sika. This includes, but is not limited to, comments in the Google Play Store and social media such as Instagram, but also all other means of communication. Furthermore, it is prohibited to place the Invite-a-Friend Code (invite-code) of the Refer a Friend program in the comments (reviews) of the Google Play Store. The Invite-a-Friend Code is intended solely for distribution to friends or for placement in your own content on social media.
+§ 6 Availability &amp; Changes to Sika
+6.1 For technical reasons, we cannot guarantee permanent and complete availability of the servers on which our services are operated. At times, the availability of our App or individual services may therefore be limited - in particular due to the necessary performance of maintenance or repair work. As a rule, we will carry out these maintenance or repair work outside normal business hours.
+6.2 Sika reserves the right to make changes to Sika and related services and systems. The user must accept any restrictions or changes associated with such modifications and does not have to be compensated or justified in the event of a disadvantage. Changes include, but are not limited to, changes in the fees for granting rewards, the payouts in cash itself, or the rewards granted to "Cash" for successfully completed surveys. Other possible changes include the expansion or reduction of functions and the termination of functions. We are also entitled to completely discontinue Sika at any time or transfer it to third parties. Possible accumulated "Cash", which entitles to a reward, will be granted in this case on request of the users on one of the possible reward ways.
+§ 7 Limitation of liability
+7.1 Our liability from this contract of use, regardless of the legal basis, for your damages which do not result from injury to life, body or health, is limited to the amount of the typically foreseeable damages at the time of the conclusion of the contract, provided that the damage was not caused by us or by a legal representative or a vicarious agent either intentionally or through gross negligence.
+7.2 This limitation of liability shall not apply if the damage is due to a culpable breach of material contractual obligations by us or by a legal representative or vicarious agent. Essential to the contract is an obligation, the fulfilment of which makes the proper execution of the contract possible in the first place and on the observance of which you may regularly rely.
+7.3 In the event of a technical error, "Sika GmbH" apologizes for the error or "bug" that the user experiences. Sika assumes no responsibility for possible errors in earning "cash", the full or partial loss of already earned cash, or other consequences based on technical errors. In particular, Sika cannot and will not be responsible for technical errors caused by third parties. This includes the technical implementation of the surveys or the embedded support software.
+ 
+§ 9 Online dispute resolution
+Information on online dispute resolution for consumers: We would like to point out the possibility of online dispute resolution (so-called "OS platform"). Consumers can use the OS platform as a contact point for out-of-court settlement of disputes concerning contractual obligations arising from online purchase or service contracts. The OS Platform can be reached under the following link: http://ec.europa.eu/consumers/odr.
+We are prepared to participate in the settlement of disputes via this OS platform.
+§ 10 Severability clause
+If a provision of these GTC is or becomes invalid or unenforceable, the remaining provisions of these GTC shall remain unaffected, unless the omission of individual clauses would put one party to the contract at such an unreasonable disadvantage that it can no longer be reasonably expected to adhere to the contract.
+ 
+Contact Us
+If you have any questions or suggestions about our Terms and Conditions, do not hesitate to contact us at sikacoinsapp@gmail.com.
+ 
+‍
+
+
+</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ThX-VH-m7m" firstAttribute="leading" secondItem="37B-9C-tTK" secondAttribute="leading" id="Fao-Rq-CDm"/>
+                            <constraint firstItem="37B-9C-tTK" firstAttribute="bottom" secondItem="ThX-VH-m7m" secondAttribute="bottom" id="IUS-p1-C6w"/>
+                            <constraint firstItem="37B-9C-tTK" firstAttribute="trailing" secondItem="ThX-VH-m7m" secondAttribute="trailing" id="Vmi-X8-Eq8"/>
+                            <constraint firstItem="ThX-VH-m7m" firstAttribute="top" secondItem="37B-9C-tTK" secondAttribute="top" id="XXX-T8-B2R"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="37B-9C-tTK"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="FrG-2l-1ob"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J2n-mE-2Jk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1664" y="1042"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2Kc-nz-UPo">
+            <objects>
+                <viewController id="bdu-nI-gkt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fFU-dc-Tie">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="G8j-pc-BPe">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Data protection declaration according to Art. 13 and 21 GDPR
+for the Sika service of Sika
+1. general
+The protection of your personal data is important to us. Therefore, we would like to offer you comprehensive transparency regarding the processing of your data in our services through this data protection declaration. Because only if the processing is comprehensible to you as a data subject are you sufficiently informed about the scope, purposes and benefits of the processing and we have complied with the requirements of the GDPR.
+The person responsible within the meaning of the Basic Data Protection Regulation (GDPR), the Federal Data Protection Act under German law (BDSG) and other data protection regulations is
+Sika
+sikacoinsapp@gmail.com
+Hereinafter referred to as "responsible party" or "we".
+2. general information on data processing
+a. Information about our authorizations
+We process personal data within the legally permissible limits. This means that data processing operations are based on a legal basis. These are standardised in Art. 6 Para. 1 GDPR. Most data processing operations are based on a legitimate interest on our part (Art. 6 para. 1 lit. f GDPR), on processing operations necessary for the performance of the contract (Art. 6 para. 1 lit. b GDPR) or on the basis of consent granted by you (Art. 6 para. 1 lit. a GDPR). In the latter case you will be informed separately (e.g. via a cookie banner) of the consent procedure.
+Personal data will only be passed on in the cases described below.
+We process personal data only for clear purposes (Art. 5 para. 1 lit. b GDPR). As soon as the purpose of the processing ceases to apply, your personal data will be deleted or protected by technical and organisational measures (e.g. by pseudonymisation).
+The same applies to the expiry of a prescribed storage period, subject to the cases in which further storage is necessary for the conclusion or fulfilment of a contract. In addition, a legal obligation may arise for longer storage or disclosure to third parties (in particular to law enforcement agencies). In other cases, the storage period and the type of data collected as well as the type of data processing depends on which Sika functions you use in each individual case. We will be happy to provide you with information on this in individual cases, in accordance with Art. 15 GDPR.
+b. Information about the technical process of our app
+Our app or the technical backend of our app ("network") is connected to various market research companies, marketplaces and enterprises (collectively "marketplaces"). These marketplaces regularly create surveys for their customers (companies). For these surveys, the marketplaces are looking for participants to participate in the surveys. In order to support the marketplaces in their search for participants, we have built our app with the services Sika. We bring the marketplaces that are looking for participants together with the participants, i.e. you. As a user of the app, you deposit personal data in your user account when creating a user account and when using a user account. This personal data is also called "qualifications" in our app. This is because we have to filter each new survey for which participants are being sought to determine whether you are eligible for the survey. Either we can find this out based on the qualifications you have already provided or we will ask you again to complete some additional qualifications that you can store in your user account. If you are eligible for a survey because the qualifications required by the marketplaces and the qualifications you have stored match, you have the opportunity to participate. If you decide to participate, we will pass on the matching qualifications to the marketplace. The survey itself is either conducted in our app itself or on the marketplace website or the website of the market research company or a company. A link in our app will connect you directly to the survey.
+
+3. data processing in connection with the use of Sika
+The use of Sika with all its functions requires the processing of certain personal data.
+3.1 Informational use of the services of Sika
+The purely informational calling of Sika requires the processing of the following personal data and information: the operating system used, the address of the terminal device with which you access Sika (IP address) as well as the time of calling Sika. All this information is automatically transmitted from your app, unless you have configured it in such a way that transmission of the information is suppressed.
+These personal data are processed for the purpose of the functionality and optimization of Sika, as well as to ensure the security of our information technology systems. These purposes are at the same time legitimate interests according to Art. 6 para. 1 lit. f. GDPR.
+The storage period of your personal data is a maximum of 14 days. This personal data will not be merged with other data sources. Data will only be passed on to third parties in necessary cases. Subject to further provisions of this privacy policy, data will not be transferred to third countries or international organisations.
+3.2 Use after registration at Sika
+Beyond the purely informative use of Sika, you have the possibility to register for our services and to use our entire offer.
+This use of our services requires the processing of personal data and information in the manner described in this section 3.
+Some processing steps may also be carried out by third party providers. The data processing of the third party providers is carried out according to the conditions of the relevant data protection declarations. In the case of data processing with third party providers, this may constitute commissioned processing within the meaning of Art. 28 GDPR. This is subject to strict legal requirements, which we comply with in the course of our contractual agreements with our contract processors.
+The use after login and the associated data processing procedures may differ from the purely informative use. The collection of this data, which is related to your profile, is carried out for the purpose of optimising our services, for the purpose of guaranteeing the functionality of our offer (legitimate purposes according to Art. 6 Para. 1 lit. f GDPR) as well as for the fulfilment of our performance obligations towards you (Art. 6 Para. 1 lit. b GDPR). Should your consent be necessary for the processing procedure, we will obtain it at the appropriate point (e.g. via the opt-in possibility within the framework of a cookie banner when using our service for the first time). If you have any further questions, we will be happy to assist you within the scope of your right to information according to Art. 15 para. 1 GDPR.
+3.3 Contact form / Contact by e-mail
+We process the data you provide us with when contacting us for the purpose of answering your enquiry, your e-mail or your request for a callback. Processed data categories are master data, contact data, content data, possibly usage data, connection data and possibly contract data. In individual cases, we forward this data to companies affiliated with us, i.e. only within our company/group. The legal basis of the processing depends on the purpose:
+- Basically, it is based on our legitimate interest and thus on Art. 6 para. 1 lit. f GDPR;
+- If the aim is to conclude a contract, the authorization is based on Art. 6 para. 1 lit. b GDPR .
+3.4 Creation and use of a user account
+You can create a user account (hereinafter also referred to as "profile") in our services in order to use the Sika services and your features. Your phone's UUID is used..
+The storage of the personal data entered by you is carried out up to the time of the deletion of your profile at Sika, beyond that only as long as the processing is necessary for possible fulfilment of the contract.
+It is not intended to pass on your data to third parties. All checks on the requested criteria in a survey are carried out by us on our servers.
+3.5 Processing of payment &amp; provision of credits
+Payment
+To process the payout of credits you receive through participation in surveys in or via our app, we offer various payment methods, some of which use payment service providers such as PayPal. Processed data in this context are usage data, connection data, master data, payment data, contact data or even contract data. The legal basis for the use of payment service providers results from Art. 6 para. 1 lit. b GDPR. We have signed an order processing contract with each of the payment service providers so that the security of the processing of your data is guaranteed at all times. The Payment Service Providers are in detail:
+PayPal
+It is possible to process the payment process with the online payment service PayPal. PayPal makes it possible to make online payments to third parties. The European operating company of PayPal is PayPal (Europe) S.à.r.l. &amp; Cie. S.C.A., 22-24 Boulevard Royal, 2449 Luxembourg. If you choose PayPal as your payment method, your data required for the payment process will be automatically transmitted to PayPal. This is regularly the following data:
+Name, address, company, email address, phone and mobile number, IP address. The data transmitted to PayPal may be transmitted by PayPal to credit reporting agencies. The purpose of this transmission is to check identity and creditworthiness. PayPal may also pass on your data to third parties if this is necessary to fulfil contractual obligations or if the data is to be processed on behalf of a third party. You can read PayPal's privacy policy at https://www.paypal.com/de/webapps/mpp/ua/privacy-full/. The legal basis for the data processing is Art. 6 para. 1 lit. b GDPR, as the processing of the data is necessary for the payment with PayPal and thus for the execution of the contract.
+Exchange for vouchers
+You can also exchange the credits you receive by participating in surveys in or via our app for vouchers from our partners, such as StarBucks, Amazon, Zalando, Google Play Store, iTunes, Spotify etc. Should you decide to do so, we will not pass on any of your personal data to our partners. For the allocation of vouchers, our service provider Cadooz transmits a non-personal ID and a credit status without personal reference to our partners. For this credit status Cadooz then transmits a voucher in the form of voucher codes to us, which we in turn pass on to you. Cadooz thus acts as an intermediary who takes over the ordering and processing of the allocation of vouchers by redeeming credit notes as our service provider. 
+5.4.2 If the data controller has made the personal data concerning you public and is obliged to delete it pursuant to Art. 17 para. 1 DPA, he shall take reasonable measures, including technical measures, taking into account the available technology and the implementation costs, to inform data controllers who process the personal data that you, as a data subject, have requested them to delete all links to this personal data or to make copies or replications of this personal data.
+5.4.3 The right of cancellation does not apply where processing is necessary
+- on the exercise of the right to freedom of expression and information;
+- to comply with a legal obligation to which the processing relates under Union or national law to which the controller is subject or to carry out a task carried out in the public interest or in the exercise of official authority vested in the controller;
+- for reasons of public interest in the field of public health pursuant to Art. 9 para. 2 letters h and i and Art. 9 para. 3 GDPR;
+- for archiving, scientific or historical research purposes in the public interest or for statistical purposes in accordance with Art. 89 para. 1 GDPR, insofar as the law referred to in para. 1 is likely to render the attainment of the objectives of such processing impossible or seriously prejudice it, or
+- to assert, exercise or defend legal claims.
+5.5 Right to information
+If you have asserted the right to rectify, erase or limit the processing vis-à-vis the controller, the controller is obliged to notify all recipients to whom the personal data concerning you have been disclosed of this rectification, erasure or limitation of processing, unless this proves impossible or involves a disproportionate effort.
+You have the right vis-à-vis the controller to be informed of these recipients.
+5.6 Right to data transferability
+You have the right to receive the personal data concerning you that you have provided to the data controller in a structured, common and machine-readable format. You also have the right to have this data communicated to another person in charge without interference from the person in charge to whom the personal data has been communicated, provided that the processing is based on a consent pursuant to Art. 6 para. 1 letter a GDPR or Art. 9 para. 2 letter a GDPR or on a contract pursuant to Art. 6 para. 1 letter b GDPR and the processing is carried out by means of automated procedures.
+In exercising this right, you also have the right to obtain that the personal data concerning you be transferred directly from one controller to another controller, insofar as this is technically feasible. The freedoms and rights of other persons must not be affected by this.
+The right to data transferability shall not apply to the processing of personal data necessary for the performance of a task carried out in the public interest or in the exercise of official authority vested in the controller.
+5.7 Right of objection
+You have the right to object at any time, for reasons arising from your particular situation, to the processing of personal data concerning you which is carried out pursuant to Article 6 paragraph 1 letter e or f FADP; this also applies to profiling based on these provisions.
+The controller will no longer process the personal data concerning you unless he can demonstrate compelling reasons for processing which are justified on grounds of protection and which outweigh your interests, rights and freedoms, or unless the processing serves to assert, exercise or defend legal claims.
+If the personal data concerning you are processed for the purpose of direct marketing, you have the right to object at any time to the processing of personal data concerning you for the purpose of such marketing, including profiling, insofar as it is linked to such direct marketing.
+If you object to processing for the purposes of direct marketing, the personal data concerning you will no longer be processed for those purposes.
+You have the possibility to exercise your right of objection in relation to the use of information society services, without prejudice to Directive 2002/58/EC, by using automated procedures involving technical specifications.
+5.8 Right to revoke the declaration of consent under data protection law
+You have the right to revoke your data protection declaration of consent at any time. Revocation of your consent does not affect the legality of the processing that has taken place on the basis of your consent until revocation.
+The processing is lawful until your revocation - the revocation therefore only affects the processing after receipt of your revocation. You can informally revoke your consent by mail or e-mail. Your personal data will then no longer be processed, subject to the permission of another legal basis. If this is not the case, your data must be deleted immediately after the revocation in accordance with Art. 17 para. 2 GDPR. Your right to revoke your consent subject to the above-mentioned conditions is guaranteed.
+Your revocation must be addressed to:
+Sika
+sikacoinsapp@gmail.com
+5.10 Right of appeal to a supervisory authority
+Without prejudice to any other administrative or judicial remedy, you have the right to lodge a complaint with a supervisory authority, in particular in the Member State in which you are resident, your place of work or the place where the alleged infringement occurred, if you consider that the processing of personal data concerning you is in breach of the DPA.
+The supervisory authority to which the complaint has been lodged shall inform the complainant of the status and outcome of the complaint, including the possibility of a judicial remedy under Art. 78 GDPR.
+6. automated decisions in individual cases including profiling
+Automated decisions in individual cases, including profiling, are not carried out.
+7. notification obligations of the responsible person
+If your personal data have been disclosed to other recipients (third parties) for legal reasons, we will inform them of any correction, deletion or restriction of the processing of your personal data (Art. 16, Art. 17 para. 1 and Art. 18 GDPR). The obligation to notify is not applicable if it involves a disproportionate effort or is impossible. We will also inform you of the recipients upon request.
+‍
+Changes to This Privacy Policy
+We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page.
+This policy is effective as of 2020-08-16
+
+</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="G8j-pc-BPe" firstAttribute="leading" secondItem="fBT-Rs-Xfi" secondAttribute="leading" id="Cff-sb-fjT"/>
+                            <constraint firstItem="G8j-pc-BPe" firstAttribute="top" secondItem="fBT-Rs-Xfi" secondAttribute="top" id="E1X-SH-cDe"/>
+                            <constraint firstItem="fBT-Rs-Xfi" firstAttribute="bottom" secondItem="G8j-pc-BPe" secondAttribute="bottom" id="MyW-bA-5No"/>
+                            <constraint firstItem="fBT-Rs-Xfi" firstAttribute="trailing" secondItem="G8j-pc-BPe" secondAttribute="trailing" id="TaN-IX-HXP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fBT-Rs-Xfi"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="A62-ln-fjR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lx7-hv-gou" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2537" y="634"/>
+        </scene>
+        <!--Payouts View Controller-->
+        <scene sceneID="HnG-uV-Uze">
+            <objects>
+                <viewController id="FfL-nG-hEX" customClass="PayoutsViewController" customModule="Sika" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h1k-Bs-8T9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nO6-fT-Nwq">
+                                <rect key="frame" x="1" y="1" width="414" height="56"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.23921568630000001" green="0.2784313725" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <textAttributes key="largeTitleTextAttributes">
+                                    <color key="textColor" red="0.83137254900000002" green="0.68627450980000004" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="textShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="$IKA" id="xyj-l7-f95">
+                                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="cancel" id="nK0-Ah-Z4K">
+                                            <color key="tintColor" red="0.23921568630000001" green="0.2784313725" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="cancel:" destination="FfL-nG-hEX" id="4Lk-Ms-Usa"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YCK-sp-0b6">
+                                <rect key="frame" x="1" y="58" width="412" height="751"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="showpayouts" rowHeight="62" id="grc-l3-lEN" customClass="ShowPayoutsTableViewCell" customModule="Sika" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="412" height="62"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="grc-l3-lEN" id="amb-jd-znT">
+                                            <rect key="frame" x="0.0" y="0.0" width="412" height="62"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="Q6h-7N-leg">
+                                                    <rect key="frame" x="5" y="11" width="402" height="31"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="testestest@yahoo.com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TTh-kq-JOq">
+                                                            <rect key="frame" x="0.0" y="0.0" width="114" height="31"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="60" id="fqV-k3-JI7"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JC3-wa-jiZ">
+                                                            <rect key="frame" x="183" y="5.5" width="100" height="20.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="100" id="9ct-0P-X41"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fg3-65-XpK">
+                                                            <rect key="frame" x="352" y="5.5" width="50" height="20"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="50" id="JYI-Ka-1oB"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Q6h-7N-leg" firstAttribute="leading" secondItem="amb-jd-znT" secondAttribute="leading" constant="5" id="MFZ-p5-ut3"/>
+                                                <constraint firstAttribute="trailing" secondItem="Q6h-7N-leg" secondAttribute="trailing" constant="5" id="WFF-0x-jgA"/>
+                                                <constraint firstAttribute="bottom" secondItem="Q6h-7N-leg" secondAttribute="bottom" constant="20" symbolic="YES" id="YcL-Tk-80u"/>
+                                                <constraint firstItem="Q6h-7N-leg" firstAttribute="top" secondItem="amb-jd-znT" secondAttribute="top" constant="11" id="dXW-lW-dPd"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="amount" destination="fg3-65-XpK" id="lgu-dc-3Hc"/>
+                                            <outlet property="email" destination="TTh-kq-JOq" id="ees-JB-DXp"/>
+                                            <outlet property="paymentType" destination="JC3-wa-jiZ" id="5Id-eS-mDY"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="payoutHeader" rowHeight="33" id="fdE-2u-79t" customClass="PaymentHeaderCell" customModule="Sika" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="90" width="412" height="33"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fdE-2u-79t" id="drc-Ok-vIf">
+                                            <rect key="frame" x="0.0" y="0.0" width="412" height="33"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="1yM-xz-uxp">
+                                                    <rect key="frame" x="5" y="0.0" width="402" height="33"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AV1-1c-UOA">
+                                                            <rect key="frame" x="0.0" y="6.5" width="114" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fn1-h0-7gy">
+                                                            <rect key="frame" x="183" y="6.5" width="100" height="20.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="100" id="p9S-b2-xNg"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$$$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAe-jG-o8Y">
+                                                            <rect key="frame" x="352" y="6.5" width="50" height="20.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="50" id="OcT-6s-2Kh"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="1yM-xz-uxp" secondAttribute="bottom" id="32U-1T-fum"/>
+                                                <constraint firstItem="1yM-xz-uxp" firstAttribute="top" secondItem="drc-Ok-vIf" secondAttribute="top" id="6sk-DD-zdP"/>
+                                                <constraint firstItem="1yM-xz-uxp" firstAttribute="leading" secondItem="drc-Ok-vIf" secondAttribute="leading" constant="5" id="RQB-lz-MHg"/>
+                                                <constraint firstAttribute="trailing" secondItem="1yM-xz-uxp" secondAttribute="trailing" constant="5" id="TeJ-iM-t2u"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.23921568630000001" green="0.2784313725" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="YCK-sp-0b6" firstAttribute="leading" secondItem="LkO-0g-JGt" secondAttribute="leading" constant="1" id="EkI-nm-kUP"/>
+                            <constraint firstItem="YCK-sp-0b6" firstAttribute="bottom" secondItem="LkO-0g-JGt" secondAttribute="bottom" constant="1" id="XTO-Xm-zL5"/>
+                            <constraint firstItem="nO6-fT-Nwq" firstAttribute="trailing" secondItem="LkO-0g-JGt" secondAttribute="trailing" constant="1" id="akA-u5-hQL"/>
+                            <constraint firstItem="YCK-sp-0b6" firstAttribute="top" secondItem="nO6-fT-Nwq" secondAttribute="bottom" constant="1" id="cLf-bR-Q7j"/>
+                            <constraint firstItem="nO6-fT-Nwq" firstAttribute="leading" secondItem="LkO-0g-JGt" secondAttribute="leading" constant="1" id="knk-U1-rFE"/>
+                            <constraint firstItem="LkO-0g-JGt" firstAttribute="trailing" secondItem="YCK-sp-0b6" secondAttribute="trailing" constant="1" id="mY5-za-1Dq"/>
+                            <constraint firstItem="YCK-sp-0b6" firstAttribute="top" secondItem="nO6-fT-Nwq" secondAttribute="bottom" constant="1" id="r6P-Eu-hi2"/>
+                            <constraint firstItem="nO6-fT-Nwq" firstAttribute="top" secondItem="LkO-0g-JGt" secondAttribute="top" constant="1" id="xuj-YQ-1W5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LkO-0g-JGt"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="f5p-Ed-9gN"/>
+                    <connections>
+                        <outlet property="paymentTable" destination="YCK-sp-0b6" id="Yfl-zi-vlI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZSY-sH-bLe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="780" y="-196"/>
+        </scene>
+    </scenes>
+</document>

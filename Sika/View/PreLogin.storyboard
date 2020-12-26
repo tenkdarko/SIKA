@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZkR-xU-Ao9">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding View Controller-->
+        <scene sceneID="42s-me-Nur">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Xhm-4D-xBV" customClass="OnboardingViewController" customModule="Sika" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZbS-hV-ryf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03v-g3-gVJ" customClass="RoundButton" customModule="Sika" customModuleProvider="target">
+                                <rect key="frame" x="294" y="64" width="100" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="FgP-ll-1Pd"/>
+                                    <constraint firstAttribute="width" constant="100" id="UBQ-lF-l60"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <state key="normal" title="Get Started">
+                                    <color key="titleColor" red="0.23921568630000001" green="0.2784313725" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.23921568630000001" green="0.2784313725" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="getStarted:" destination="Xhm-4D-xBV" eventType="touchUpInside" id="miV-ah-gC3"/>
+                                </connections>
+                            </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Gg-hI-EFd" userLabel="Footer">
+                                <rect key="frame" x="20" y="762" width="374" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0H-sz-nRD">
+                                        <rect key="frame" x="136" y="19.5" width="102" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="k7z-fz-wKk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="Terms of Service">
+                                            <color key="titleColor" red="0.054901960780000002" green="0.4039215686" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="pQe-YE-RTX" kind="show" id="WFt-fU-Jlr"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By clicking &quot;Get Started&quot; you accept our ToS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iAc-V6-b3q">
+                                        <rect key="frame" x="69.5" y="5" width="235" height="13.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="13.5" id="zaw-8a-CJG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="K0H-sz-nRD" firstAttribute="centerX" secondItem="6Gg-hI-EFd" secondAttribute="centerX" id="2Df-po-mzX"/>
+                                    <constraint firstItem="K0H-sz-nRD" firstAttribute="top" secondItem="iAc-V6-b3q" secondAttribute="bottom" constant="1" id="2NL-d2-k30"/>
+                                    <constraint firstItem="iAc-V6-b3q" firstAttribute="top" secondItem="6Gg-hI-EFd" secondAttribute="top" constant="5" id="YaC-0b-lWs"/>
+                                    <constraint firstItem="iAc-V6-b3q" firstAttribute="centerX" secondItem="6Gg-hI-EFd" secondAttribute="centerX" id="dzt-NU-ae6"/>
+                                    <constraint firstAttribute="height" constant="40" id="olP-wI-NcF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="XEh-Zn-3ik" firstAttribute="trailing" secondItem="03v-g3-gVJ" secondAttribute="trailing" constant="20" id="NqA-Kj-6FM"/>
+                            <constraint firstItem="03v-g3-gVJ" firstAttribute="top" secondItem="XEh-Zn-3ik" secondAttribute="top" constant="20" id="Q0E-gR-Fmx"/>
+                            <constraint firstItem="6Gg-hI-EFd" firstAttribute="leading" secondItem="XEh-Zn-3ik" secondAttribute="leading" constant="20" id="V2L-1o-tj9"/>
+                            <constraint firstItem="XEh-Zn-3ik" firstAttribute="bottom" secondItem="6Gg-hI-EFd" secondAttribute="bottom" constant="60" id="j9k-K2-3jT"/>
+                            <constraint firstItem="XEh-Zn-3ik" firstAttribute="trailing" secondItem="6Gg-hI-EFd" secondAttribute="trailing" constant="20" id="pWn-zo-sEW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XEh-Zn-3ik"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Dwb-e7-MQF"/>
+                    <connections>
+                        <outlet property="beginButton" destination="03v-g3-gVJ" id="PwJ-vl-ddp"/>
+                        <outlet property="footerView" destination="6Gg-hI-EFd" id="9fU-oI-YSk"/>
+                        <segue destination="hBB-Np-VqH" kind="show" identifier="invitationCode" id="Q4H-uc-gQ0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Wv-ct-taY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-9062.31884057971" y="-220.3125"/>
+        </scene>
+        <!--Make Decision View Controller-->
+        <scene sceneID="i2a-qd-q97">
+            <objects>
+                <viewController id="ZkR-xU-Ao9" customClass="MakeDecisionViewController" customModule="Sika" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Npf-Iu-M7X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="UTu-Eq-Z34"/>
+                    </view>
+                    <connections>
+                        <segue destination="EML-02-49O" kind="show" identifier="goToMain" id="SYQ-Ts-YoM"/>
+                        <segue destination="Xhm-4D-xBV" kind="show" identifier="getStarted" id="TZh-AX-0U2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ead-dW-cXX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8028" y="-1056"/>
+        </scene>
+        <!--Get Started View Controller-->
+        <scene sceneID="tAw-Xb-mgV">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="lPS-o9-tcf" customClass="GetStartedViewController" customModule="Sika" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fOM-SX-O3y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="AKW-WQ-HlJ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="605"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eSj-y8-XuT" userLabel="Header">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KmB-lm-gD1">
+                                                <rect key="frame" x="24" y="20" width="382" height="110"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Welcome to">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" metaFont="system" size="45"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="           ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.43529411759999997" green="0.59607843140000005" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" metaFont="system" size="45"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="$IKA">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.26667000000000002" green="0.62744999999999995" blue="0.43529000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="48" name="HelveticaNeue"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="KmB-lm-gD1" firstAttribute="leading" secondItem="eSj-y8-XuT" secondAttribute="leading" constant="24" id="4Dl-zq-FEu"/>
+                                            <constraint firstItem="KmB-lm-gD1" firstAttribute="top" secondItem="eSj-y8-XuT" secondAttribute="top" constant="20" id="LsU-kv-LWK"/>
+                                            <constraint firstItem="KmB-lm-gD1" firstAttribute="top" secondItem="eSj-y8-XuT" secondAttribute="top" constant="20" id="TSM-Bg-xRF"/>
+                                            <constraint firstItem="KmB-lm-gD1" firstAttribute="leading" secondItem="eSj-y8-XuT" secondAttribute="leading" constant="15" id="TlU-zg-jsS"/>
+                                            <constraint firstAttribute="trailing" secondItem="KmB-lm-gD1" secondAttribute="trailing" constant="8" id="evS-RO-KfA"/>
+                                            <constraint firstAttribute="bottom" secondItem="KmB-lm-gD1" secondAttribute="bottom" constant="20" id="g7I-E6-IJX"/>
+                                            <constraint firstAttribute="trailing" secondItem="KmB-lm-gD1" secondAttribute="trailing" constant="25" id="mqx-Fc-mn1"/>
+                                            <constraint firstAttribute="bottom" secondItem="KmB-lm-gD1" secondAttribute="bottom" id="q8i-R0-9Ya"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="4Dl-zq-FEu"/>
+                                                <exclude reference="TSM-Bg-xRF"/>
+                                                <exclude reference="evS-RO-KfA"/>
+                                                <exclude reference="q8i-R0-9Ya"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="4Dl-zq-FEu"/>
+                                                <exclude reference="LsU-kv-LWK"/>
+                                                <include reference="TSM-Bg-xRF"/>
+                                                <exclude reference="TlU-zg-jsS"/>
+                                                <include reference="evS-RO-KfA"/>
+                                                <exclude reference="g7I-E6-IJX"/>
+                                                <exclude reference="mqx-Fc-mn1"/>
+                                                <include reference="q8i-R0-9Ya"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eJ9-g2-GWV" userLabel="body">
+                                        <rect key="frame" x="0.0" y="150" width="414" height="455"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b7P-BA-9jS">
+                                                <rect key="frame" x="20" y="8" width="374" height="149.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Earn Credits" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xfa-wZ-QBc">
+                                                        <rect key="frame" x="121" y="20" width="183" height="60"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Complete simple tasks such as surveys to earn credits" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ZN-06-mHk">
+                                                        <rect key="frame" x="121" y="88.5" width="233" height="41"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="survey" translatesAutoresizingMaskIntoConstraints="NO" id="3GT-L7-3vd">
+                                                        <rect key="frame" x="1" y="25" width="100" height="100"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="1ek-j5-U7W"/>
+                                                            <constraint firstAttribute="width" constant="100" id="AJk-wm-auv"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="8ZN-06-mHk" firstAttribute="leading" secondItem="3GT-L7-3vd" secondAttribute="trailing" constant="20" id="2I8-Xr-YpH"/>
+                                                    <constraint firstItem="Xfa-wZ-QBc" firstAttribute="leading" secondItem="3GT-L7-3vd" secondAttribute="trailing" constant="20" id="2Ol-iW-yH2"/>
+                                                    <constraint firstAttribute="trailing" secondItem="8ZN-06-mHk" secondAttribute="trailing" constant="20" symbolic="YES" id="4g3-x8-0he"/>
+                                                    <constraint firstItem="8ZN-06-mHk" firstAttribute="top" secondItem="Xfa-wZ-QBc" secondAttribute="bottom" constant="8.5" id="IHA-pY-txg"/>
+                                                    <constraint firstItem="3GT-L7-3vd" firstAttribute="centerY" secondItem="b7P-BA-9jS" secondAttribute="centerY" id="Wff-RL-29c"/>
+                                                    <constraint firstItem="Xfa-wZ-QBc" firstAttribute="top" secondItem="b7P-BA-9jS" secondAttribute="top" constant="20" id="Zxc-uz-CYv"/>
+                                                    <constraint firstItem="3GT-L7-3vd" firstAttribute="leading" secondItem="b7P-BA-9jS" secondAttribute="leading" constant="1" id="okm-b7-YWa"/>
+                                                    <constraint firstAttribute="bottom" secondItem="8ZN-06-mHk" secondAttribute="bottom" constant="20" id="x1L-ob-dHy"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Emc-41-Y5D">
+                                                <rect key="frame" x="20" y="172.5" width="374" height="87"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get Cash" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uu4-uw-sPy">
+                                                        <rect key="frame" x="126" y="20" width="228" height="38.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Redeem your credits for cash" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBL-Zw-TA7">
+                                                        <rect key="frame" x="126" y="66.5" width="228" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cash-3487046_1920" translatesAutoresizingMaskIntoConstraints="NO" id="VPC-fk-XgR">
+                                                        <rect key="frame" x="1" y="-7" width="105" height="101"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="101" id="hpS-7D-Ylk"/>
+                                                            <constraint firstAttribute="width" constant="105" id="w92-aJ-gNQ"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="dBL-Zw-TA7" secondAttribute="trailing" constant="20" id="45C-fd-OiE"/>
+                                                    <constraint firstItem="dBL-Zw-TA7" firstAttribute="leading" secondItem="VPC-fk-XgR" secondAttribute="trailing" constant="20" id="Awx-xV-iEI"/>
+                                                    <constraint firstItem="Uu4-uw-sPy" firstAttribute="top" secondItem="Emc-41-Y5D" secondAttribute="top" constant="20" id="E9M-cu-D8y"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Uu4-uw-sPy" secondAttribute="trailing" constant="20" symbolic="YES" id="EEj-IP-8XR"/>
+                                                    <constraint firstItem="VPC-fk-XgR" firstAttribute="centerY" secondItem="Emc-41-Y5D" secondAttribute="centerY" id="ODm-m6-h19"/>
+                                                    <constraint firstItem="Uu4-uw-sPy" firstAttribute="leading" secondItem="VPC-fk-XgR" secondAttribute="trailing" constant="20" id="XJV-8B-TBp"/>
+                                                    <constraint firstAttribute="bottom" secondItem="dBL-Zw-TA7" secondAttribute="bottom" id="Zoh-yU-7oP"/>
+                                                    <constraint firstItem="dBL-Zw-TA7" firstAttribute="top" secondItem="Uu4-uw-sPy" secondAttribute="bottom" constant="8" id="ddx-PE-Fc0"/>
+                                                    <constraint firstItem="VPC-fk-XgR" firstAttribute="leading" secondItem="Emc-41-Y5D" secondAttribute="leading" constant="1" id="s1z-Hf-rZc"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mi5-P5-uFi">
+                                                <rect key="frame" x="20" y="274.5" width="374" height="173.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fast Payout" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xx8-fs-SVw">
+                                                        <rect key="frame" x="126" y="20" width="228" height="38.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payouts take around 3 working days" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="foM-QQ-7N4">
+                                                        <rect key="frame" x="126" y="66.5" width="228" height="41"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <size key="shadowOffset" width="0.0" height="8"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paid-160126_1280" translatesAutoresizingMaskIntoConstraints="NO" id="HAc-Q3-pb3">
+                                                        <rect key="frame" x="1" y="20" width="105" height="101"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="101" id="tqB-Uj-xgz"/>
+                                                            <constraint firstAttribute="width" constant="105" id="vf7-RD-d9d"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="Xx8-fs-SVw" secondAttribute="trailing" constant="20" symbolic="YES" id="6Cg-iU-C1N"/>
+                                                    <constraint firstItem="foM-QQ-7N4" firstAttribute="top" secondItem="Xx8-fs-SVw" secondAttribute="bottom" constant="8" id="93M-Is-seN"/>
+                                                    <constraint firstAttribute="trailing" secondItem="foM-QQ-7N4" secondAttribute="trailing" constant="20" symbolic="YES" id="Ei7-9M-A54"/>
+                                                    <constraint firstItem="Xx8-fs-SVw" firstAttribute="leading" secondItem="HAc-Q3-pb3" secondAttribute="trailing" constant="20" id="MQa-Gz-FEu"/>
+                                                    <constraint firstAttribute="bottom" secondItem="foM-QQ-7N4" secondAttribute="bottom" constant="66" id="Pgw-mb-WYY"/>
+                                                    <constraint firstItem="foM-QQ-7N4" firstAttribute="leading" secondItem="HAc-Q3-pb3" secondAttribute="trailing" constant="20" id="Xjq-ag-fwP"/>
+                                                    <constraint firstItem="HAc-Q3-pb3" firstAttribute="top" secondItem="Mi5-P5-uFi" secondAttribute="top" constant="20" id="srW-iT-J1k"/>
+                                                    <constraint firstItem="HAc-Q3-pb3" firstAttribute="leading" secondItem="Mi5-P5-uFi" secondAttribute="leading" constant="1" id="tJn-Th-DBo"/>
+                                                    <constraint firstItem="Xx8-fs-SVw" firstAttribute="top" secondItem="Mi5-P5-uFi" secondAttribute="top" constant="20" id="uKM-XP-tR8"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="b7P-BA-9jS" firstAttribute="top" secondItem="eJ9-g2-GWV" secondAttribute="top" constant="8" id="EvL-YH-641"/>
+                                            <constraint firstItem="Emc-41-Y5D" firstAttribute="top" secondItem="b7P-BA-9jS" secondAttribute="bottom" constant="15" id="LLE-Ob-lIO"/>
+                                            <constraint firstAttribute="trailing" secondItem="b7P-BA-9jS" secondAttribute="trailing" constant="20" id="SBX-Uf-7bF"/>
+                                            <constraint firstItem="Mi5-P5-uFi" firstAttribute="leading" secondItem="eJ9-g2-GWV" secondAttribute="leading" constant="20" id="VG8-2W-tpC"/>
+                                            <constraint firstItem="b7P-BA-9jS" firstAttribute="leading" secondItem="eJ9-g2-GWV" secondAttribute="leading" constant="20" id="VMR-Lc-5OS"/>
+                                            <constraint firstItem="Emc-41-Y5D" firstAttribute="leading" secondItem="eJ9-g2-GWV" secondAttribute="leading" constant="20" id="ekd-XH-WdB"/>
+                                            <constraint firstItem="Mi5-P5-uFi" firstAttribute="top" secondItem="Emc-41-Y5D" secondAttribute="bottom" constant="15" id="lJw-Y9-cBr"/>
+                                            <constraint firstAttribute="trailing" secondItem="Mi5-P5-uFi" secondAttribute="trailing" constant="20" id="sLR-pP-qCc"/>
+                                            <constraint firstAttribute="trailing" secondItem="Emc-41-Y5D" secondAttribute="trailing" constant="20" id="uaX-Dg-jUZ"/>
+                                            <constraint firstAttribute="bottom" secondItem="Mi5-P5-uFi" secondAttribute="bottom" constant="7" id="vcS-Sz-pEW"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="AKW-WQ-HlJ" secondAttribute="trailing" id="DpT-cc-FB8"/>
+                            <constraint firstItem="AKW-WQ-HlJ" firstAttribute="leading" secondItem="zsZ-vw-dt7" secondAttribute="leading" id="eJ5-t3-Twu"/>
+                            <constraint firstItem="AKW-WQ-HlJ" firstAttribute="top" secondItem="zsZ-vw-dt7" secondAttribute="top" id="j0q-4o-1vZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zsZ-vw-dt7"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hEk-eZ-Ruo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2MA-91-44O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-9877" y="455"/>
+        </scene>
+        <!--Invitation Code View Controller-->
+        <scene sceneID="J5U-Xt-Nx1">
+            <objects>
+                <viewController id="hBB-Np-VqH" customClass="InvitationCodeViewController" customModule="Sika" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GqB-9O-NFA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7N2-EV-GFZ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.23921568630000001" green="0.2784313725" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <textAttributes key="largeTitleTextAttributes">
+                                    <color key="textColor" red="0.43529411759999997" green="0.59607843140000005" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="textShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem id="yyA-aw-bld">
+                                        <barButtonItem key="rightBarButtonItem" title="Login" id="ebg-3b-xnt">
+                                            <color key="tintColor" red="0.23921568630000001" green="0.2784313725" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="skipButton:" destination="hBB-Np-VqH" id="Yfa-A6-91c"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UTd-fH-U2G">
+                                <rect key="frame" x="5" y="65" width="404" height="723"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XsK-zm-CJX" userLabel="Header">
+                                        <rect key="frame" x="1" y="0.0" width="402" height="148"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pj-aJ-khw">
+                                                <rect key="frame" x="24" y="10" width="312" height="118"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Register">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="30" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.43529000000000001" green="0.59608000000000005" blue="0.14118" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="30" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="$IKA">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.26667000000000002" green="0.62744999999999995" blue="0.43529000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="48" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="148" id="PgE-SO-YDc"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8J-iX-Tco" customClass="RoundButton" customModule="Sika" customModuleProvider="target">
+                                        <rect key="frame" x="50" y="653" width="304" height="40"/>
+                                        <color key="backgroundColor" red="0.23921568630000001" green="0.2784313725" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="yCb-r5-Rdr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                        <state key="normal" title="Register">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="continueRef:" destination="hBB-Np-VqH" eventType="touchUpInside" id="byo-ue-WvC"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="R7J-m3-YaU">
+                                        <rect key="frame" x="20" y="210.5" width="364" height="302"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b8y-MF-qk4" customClass="TextfieldNice" customModule="Sika" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="364" height="50"/>
+                                                <color key="tintColor" red="0.43529411759999997" green="0.59607843140000005" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="2gq-Uc-Vje"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="username"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderBottomColor">
+                                                        <color key="value" red="0.23921568630000001" green="0.2784313725" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ghQ-vi-BmZ" customClass="TextfieldNice" customModule="Sika" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="84" width="364" height="50"/>
+                                                <color key="tintColor" red="0.43529411764705883" green="0.59607843137254901" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="rZS-qB-gjo"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" textContentType="password"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderBottomColor">
+                                                        <color key="value" red="0.23921568630000001" green="0.2784313725" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JAy-nz-OQB" customClass="TextfieldNice" customModule="Sika" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="168" width="364" height="50"/>
+                                                <color key="tintColor" red="0.43529411759999997" green="0.59607843140000005" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="VQX-L1-w1x"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" textContentType="password"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderBottomColor">
+                                                        <color key="value" red="0.23921568630000001" green="0.2784313725" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Invitation Code - [Optional]" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ebA-EY-vaQ" customClass="TextfieldNice" customModule="Sika" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="252" width="364" height="50"/>
+                                                <color key="tintColor" red="0.43529411759999997" green="0.59607843140000005" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="YG9-ge-ORh"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="username"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderBottomColor">
+                                                        <color key="value" red="0.23921568630000001" green="0.2784313725" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="R7J-m3-YaU" firstAttribute="leading" secondItem="UTd-fH-U2G" secondAttribute="leading" constant="20" id="Cc5-id-vER"/>
+                                    <constraint firstItem="R7J-m3-YaU" firstAttribute="centerX" secondItem="UTd-fH-U2G" secondAttribute="centerX" id="Q9g-rF-vNe"/>
+                                    <constraint firstItem="XsK-zm-CJX" firstAttribute="top" secondItem="UTd-fH-U2G" secondAttribute="top" id="RzS-zR-171"/>
+                                    <constraint firstItem="R7J-m3-YaU" firstAttribute="centerY" secondItem="UTd-fH-U2G" secondAttribute="centerY" id="Web-y6-CRQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="R7J-m3-YaU" secondAttribute="trailing" constant="20" id="abe-L2-3wG"/>
+                                    <constraint firstAttribute="bottom" secondItem="b8J-iX-Tco" secondAttribute="bottom" constant="30" id="cgO-od-wIA"/>
+                                    <constraint firstAttribute="trailing" secondItem="b8J-iX-Tco" secondAttribute="trailing" constant="50" id="d2y-fK-M4I"/>
+                                    <constraint firstAttribute="trailing" secondItem="XsK-zm-CJX" secondAttribute="trailing" constant="1" id="dPE-H3-Mng"/>
+                                    <constraint firstAttribute="trailing" secondItem="XsK-zm-CJX" secondAttribute="trailing" constant="1" id="gOs-Wn-X0u"/>
+                                    <constraint firstItem="XsK-zm-CJX" firstAttribute="leading" secondItem="UTd-fH-U2G" secondAttribute="leading" constant="1" id="kHO-Xb-leh"/>
+                                    <constraint firstItem="b8J-iX-Tco" firstAttribute="leading" secondItem="UTd-fH-U2G" secondAttribute="leading" constant="50" id="xVW-DU-cL2"/>
+                                    <constraint firstItem="XsK-zm-CJX" firstAttribute="leading" secondItem="UTd-fH-U2G" secondAttribute="leading" constant="1" id="y5Q-ag-nxI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="UTd-fH-U2G" firstAttribute="top" secondItem="7N2-EV-GFZ" secondAttribute="bottom" constant="9" id="Coa-84-x3f"/>
+                            <constraint firstItem="7N2-EV-GFZ" firstAttribute="trailing" secondItem="Cvg-hE-1oE" secondAttribute="trailing" id="Y2Z-r1-6Wl"/>
+                            <constraint firstItem="7N2-EV-GFZ" firstAttribute="top" secondItem="Cvg-hE-1oE" secondAttribute="top" id="b1M-pi-18q"/>
+                            <constraint firstItem="Cvg-hE-1oE" firstAttribute="trailing" secondItem="UTd-fH-U2G" secondAttribute="trailing" constant="5" id="dsU-3r-J79"/>
+                            <constraint firstItem="UTd-fH-U2G" firstAttribute="leading" secondItem="Cvg-hE-1oE" secondAttribute="leading" constant="5" id="vJY-gh-7Vt"/>
+                            <constraint firstItem="Cvg-hE-1oE" firstAttribute="bottom" secondItem="UTd-fH-U2G" secondAttribute="bottom" constant="20" id="xoe-A1-ZXp"/>
+                            <constraint firstItem="7N2-EV-GFZ" firstAttribute="leading" secondItem="Cvg-hE-1oE" secondAttribute="leading" id="yF2-hs-4yR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Cvg-hE-1oE"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TBi-8x-2BS"/>
+                    <connections>
+                        <outlet property="confirmPassword" destination="JAy-nz-OQB" id="LSX-Yr-HE3"/>
+                        <outlet property="continueButton" destination="b8J-iX-Tco" id="wPo-Xj-lsS"/>
+                        <outlet property="inviteCode" destination="ebA-EY-vaQ" id="kWS-HL-jKc"/>
+                        <outlet property="password" destination="ghQ-vi-BmZ" id="oxn-yM-UxM"/>
+                        <outlet property="topRightButton" destination="ebg-3b-xnt" id="7To-m9-bAJ"/>
+                        <outlet property="userName" destination="b8y-MF-qk4" id="If3-go-tAX"/>
+                        <segue destination="EML-02-49O" kind="show" identifier="goToMain" id="xte-u5-PdD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O1U-G8-m6U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7957.971014492754" y="-219.64285714285714"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="tLK-Nu-ogS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="EML-02-49O" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="GZI-PI-fy1"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nqB-AP-cgn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7119" y="-623"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ngN-ef-eBr">
+            <objects>
+                <viewController id="pQe-YE-RTX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ytb-fU-QTT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bcB-9p-fQ6">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">§ 1 Contractual Partner
+1.1 These Terms and Conditions apply to all legal transactions between Sika, hereinafter referred to as "Sika" or "we", and its contractual partner, hereinafter referred to as "User" or "You", which are concluded through Sika.
+1.2 These Terms and Conditions apply regardless of whether you are a consumer, entrepreneur or merchant. Should there be any legal peculiarities in relation to consumers, we will point this out in these GTC.
+1.3 A consumer is any natural person who concludes a legal transaction for purposes that are predominantly neither commercial nor their independent professional activity (§ 13 BGB, definition according to German law). Entrepreneur is a natural or legal person or a partnership with legal capacity who, when concluding a legal transaction, acts in the exercise of their commercial or independent professional activity (§ 14 BGB, definition according to German law).
+§ 2 How Sika works
+2.1 As a user of Sika, you can participate in various selected market research surveys, which we ourselves post on Sika or have posted through our partners.
+2.2 Our app or the technical backend of our app ("network") is connected to various market research companies, marketplaces and enterprises (collectively "marketplaces"). These marketplaces regularly create surveys for their customers (companies). For these surveys, the marketplaces are looking for participants to participate in the surveys. To support the marketplaces in their search for participants, we have built our app with the Sika service. We bring the marketplaces looking for participants together with the users, i.e. you.
+2.3 As a user of the App, we only collect your UUID to identify your phone.
+2.4 If you are eligible for a survey because the qualifications required by the marketplaces and the qualifications you have stored match, you have the opportunity to participate in the survey. If you decide to participate, we will pass on the matching qualifications to the marketplace. The survey itself is either conducted in our app itself or on the marketplace website or the website of the market research company or a company. A link in our app will connect you directly to the survey. You have no right to participate in a survey. The participants are finally selected by us or the marketplace.
+2.5 With each successful and completed participation in a survey you will receive credits ("cash"). You can collect these credits and, when you have reached the corresponding values, exchange them for a cash payout or for the allocation of credits from our partners (both together "Reward"). You can check the amount of your credits at any time in your user account. You can also view our current partner portfolio in our app at any time.
+§ 3 Registration and creation of a user account
+3.1 In order to use our app, your free registration as a user is required. Only natural persons with unlimited legal capacity may register as users.
+3.2 The user contract is concluded when we confirm the registration and activate your user account.
+3.3 Each user may only register once.
+3.4 We have the right to exclude you from the use of our services and to delete your user account if we have reasonable grounds to suspect that you have (have) violated the essential obligations of these Terms and Conditions. We will inform you about this exclusion and give you the opportunity to comment. In any case, we will take your legitimate interests into account and enable you to exchange your credits for vouchers. The right to extraordinary termination remains unaffected.
+§ 4 Account balance and terms of payment
+4.1 Your account balance is shown in "Cash". This indication is a virtual currency and does not imply any claim to the amount in cash or any other national or virtual currency. A sufficient amount of "Cash" may result in a payout in cash or the right to exchange it for vouchers. Possession of "Cash" does not imply a right to conversion at any time unless appropriate thresholds for an appropriate method of withdrawal are reached.
+4.2 After the necessary amount of "Cash" has been earned for the offered payouts or exchanges into vouchers ("Reward"), the User may request one of the listed Rewards. The following aspects are binding for all users of Sika.
+a) Understand the meaning of "Cash". "Cash" is only an indicator of progress to the next opportunity to receive a reward. Based on the displayed "Cash", there is no entitlement to a reward as long as the payout limits are not reached. The thresholds to be reached to claim a reward vary depending on the reward method. The individual current minimum amounts for rewards can be seen in the app by selecting the respective reward method. There is no way to convert remaining "cash" or any amount of "cash" into rewards or payouts into cash.
+b) Once a Reward has been requested, we will check the request for legality. In case of suspected fraud or breach of these terms and conditions, we reserve the right to delay or stop the payment of the Reward. We are not obliged to prove the user's guilt in order to be able to initiate sanctioning consequences. In addition, a comparison of a reward request with the fraud reports regularly sent by our survey partners (including marketplaces) will take place. If the partner refuses the survey results of individual users and thus also rewards us for these due to poor quality or other reasons, we will deduct the "cash" unjustly earned by the respective users in the amount of the amount shown in the fraud suspicion reports. If the Reward has already been paid out before the deduction based on the Fraud Suspicion Report could be made, we may charge the user account with a negative "Cash" balance.
+c) We try to process the reward within the first 5 working days after the request. In case of suspected fraud, we reserve the right to delay the payment of the reward indefinitely. For users whose user behaviour turns out to be legal and innocent in the course of the investigation, there is no claim for compensation due to the delay.
+d) Not every payment method is available in every country. We try to present this as clearly as possible. If a user has chosen a reward method that is not available, we are not obliged to implement it. We may refer to alternative reward methods, but we are not obliged to offer alternatives requested by the user.
+e) After receiving a reward, the user account may not be deleted directly. For data protection reasons, we must delete your email address from our servers as soon as you have deleted your data or the app itself. Delete your account or your data after you have requested a reward, but before the reward has arrived, the payout can no longer be assigned and therefore expires.
+§ 5 Rules of use
+5.1 The use of Sika is bound to the following rules:
+a) The use of "bot-controlled" software, elements, apps etc. in any form is prohibited. Only the use by a natural person via a smartphone or tablet is allowed.
+b) Each user may use Sika only on one terminal device. The systematic use on several devices is prohibited.
+c) The use of Sika is only allowed in the home country of the user. The use of services such as fake GPS, VPN or similar are prohibited while using Sika.
+d) The in-App currency "Cash" (coins) can only be earned through the channels provided in the App. These ways are watching videos, completing "offers" from the "Offerwalls" or the complete participation including the completion of surveys. Any attempt to fake cash by modifying settings or the network connection is prohibited. Failure to comply with the rules and restrictions will result in strict sanctions, which may include deletion of the user account, resetting the "Cash" amount earned through prohibited means, and withholding the rewards requested by the prohibited use.
+e) The use of Sika is permitted from the age of 16 years or older. The age of the user is queried before using the app and must be answered correctly. A wrong answer will result in the blocking and deletion of the user account.
+5.2 Users are prohibited from spreading insulting, aggressive, violence glorifying or other legally prohibited expressions, sentences or messages in the form of comments, pictures or other media in the context of Sika. This includes, but is not limited to, comments in the Google Play Store and social media such as Instagram, but also all other means of communication. Furthermore, it is prohibited to place the Invite-a-Friend Code (invite-code) of the Refer a Friend program in the comments (reviews) of the Google Play Store. The Invite-a-Friend Code is intended solely for distribution to friends or for placement in your own content on social media.
+§ 6 Availability &amp; Changes to Sika
+6.1 For technical reasons, we cannot guarantee permanent and complete availability of the servers on which our services are operated. At times, the availability of our App or individual services may therefore be limited - in particular due to the necessary performance of maintenance or repair work. As a rule, we will carry out these maintenance or repair work outside normal business hours.
+6.2 Sika reserves the right to make changes to Sika and related services and systems. The user must accept any restrictions or changes associated with such modifications and does not have to be compensated or justified in the event of a disadvantage. Changes include, but are not limited to, changes in the fees for granting rewards, the payouts in cash itself, or the rewards granted to "Cash" for successfully completed surveys. Other possible changes include the expansion or reduction of functions and the termination of functions. We are also entitled to completely discontinue Sika at any time or transfer it to third parties. Possible accumulated "Cash", which entitles to a reward, will be granted in this case on request of the users on one of the possible reward ways.
+§ 7 Limitation of liability
+7.1 Our liability from this contract of use, regardless of the legal basis, for your damages which do not result from injury to life, body or health, is limited to the amount of the typically foreseeable damages at the time of the conclusion of the contract, provided that the damage was not caused by us or by a legal representative or a vicarious agent either intentionally or through gross negligence.
+7.2 This limitation of liability shall not apply if the damage is due to a culpable breach of material contractual obligations by us or by a legal representative or vicarious agent. Essential to the contract is an obligation, the fulfilment of which makes the proper execution of the contract possible in the first place and on the observance of which you may regularly rely.
+7.3 In the event of a technical error, "Sika GmbH" apologizes for the error or "bug" that the user experiences. Sika assumes no responsibility for possible errors in earning "cash", the full or partial loss of already earned cash, or other consequences based on technical errors. In particular, Sika cannot and will not be responsible for technical errors caused by third parties. This includes the technical implementation of the surveys or the embedded support software.
+ 
+§ 9 Online dispute resolution
+Information on online dispute resolution for consumers: We would like to point out the possibility of online dispute resolution (so-called "OS platform"). Consumers can use the OS platform as a contact point for out-of-court settlement of disputes concerning contractual obligations arising from online purchase or service contracts. The OS Platform can be reached under the following link: http://ec.europa.eu/consumers/odr.
+We are prepared to participate in the settlement of disputes via this OS platform.
+§ 10 Severability clause
+If a provision of these GTC is or becomes invalid or unenforceable, the remaining provisions of these GTC shall remain unaffected, unless the omission of individual clauses would put one party to the contract at such an unreasonable disadvantage that it can no longer be reasonably expected to adhere to the contract.
+ 
+Contact Us
+If you have any questions or suggestions about our Terms and Conditions, do not hesitate to contact us at sikacoinsapp@gmail.com.
+ 
+‍
+
+
+</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6eu-YJ-Tc8" firstAttribute="bottom" secondItem="bcB-9p-fQ6" secondAttribute="bottom" id="6x1-FU-T0W"/>
+                            <constraint firstItem="bcB-9p-fQ6" firstAttribute="top" secondItem="6eu-YJ-Tc8" secondAttribute="top" id="7Si-HY-GrZ"/>
+                            <constraint firstItem="bcB-9p-fQ6" firstAttribute="leading" secondItem="6eu-YJ-Tc8" secondAttribute="leading" id="NDC-Iw-Zxf"/>
+                            <constraint firstItem="6eu-YJ-Tc8" firstAttribute="trailing" secondItem="bcB-9p-fQ6" secondAttribute="trailing" id="hKD-Mn-4uJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6eu-YJ-Tc8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KOc-QC-HwN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hmA-FI-WmB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-9062" y="548"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cash-3487046_1920" width="640" height="426.5"/>
+        <image name="paid-160126_1280" width="426.5" height="424"/>
+        <image name="survey" width="426.5" height="426.5"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="xte-u5-PdD"/>
+    </inferredMetricsTieBreakers>
+</document>
