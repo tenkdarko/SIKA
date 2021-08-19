@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		00F6F0168D6A77445A352726 /* Pods_Sika.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41365808BEB4EF6921CFD54D /* Pods_Sika.framework */; };
+		0AB2383326CDD3F4007D54EB /* InbrainAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB2383226CDD3F4007D54EB /* InbrainAI.swift */; };
+		0AB2383526CDD588007D54EB /* InbrainAIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB2383426CDD588007D54EB /* InbrainAIViewController.swift */; };
 		A218C11324E21BEB007779BD /* InvitationCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A218C11224E21BEB007779BD /* InvitationCodeViewController.swift */; };
 		A218C11524E23D21007779BD /* MakeDecisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A218C11424E23D21007779BD /* MakeDecisionViewController.swift */; };
 		A2260AB124E583180045B10E /* ShowPayoutsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2260AB024E583180045B10E /* ShowPayoutsTableViewCell.swift */; };
@@ -69,6 +71,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AB2383226CDD3F4007D54EB /* InbrainAI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InbrainAI.swift; sourceTree = "<group>"; };
+		0AB2383426CDD588007D54EB /* InbrainAIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InbrainAIViewController.swift; sourceTree = "<group>"; };
 		41365808BEB4EF6921CFD54D /* Pods_Sika.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sika.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B911AD57811F4283793C3DB /* Pods-Sika.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sika.debug.xcconfig"; path = "Target Support Files/Pods-Sika/Pods-Sika.debug.xcconfig"; sourceTree = "<group>"; };
 		A218C11224E21BEB007779BD /* InvitationCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationCodeViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +151,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AB2383126CDD3D7007D54EB /* SurveyProviders */ = {
+			isa = PBXGroup;
+			children = (
+				0AB2383226CDD3F4007D54EB /* InbrainAI.swift */,
+			);
+			path = SurveyProviders;
+			sourceTree = "<group>";
+		};
 		1D352A4A4DA57FECA5B327D5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +228,7 @@
 		A26A1F4D24E0CF5B00F40539 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0AB2383126CDD3D7007D54EB /* SurveyProviders */,
 				A2BC9B76252E538000E4CBEA /* Extensions.swift */,
 				A26A1F5A24E2010000F40539 /* AWS */,
 				A26A1F5224E0F44A00F40539 /* Extensions */,
@@ -245,6 +258,7 @@
 				A2F8799324E326420091940E /* CustomTabViewController.swift */,
 				A2CE3F5424E341F000318EED /* MoreInfo.swift */,
 				A2260AB824E86BD50045B10E /* InviteFriendsViewController.swift */,
+				0AB2383426CDD588007D54EB /* InbrainAIViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -592,6 +606,7 @@
 				A2BC9B79252FA82600E4CBEA /* PaymentHeaderCell.swift in Sources */,
 				A218C11524E23D21007779BD /* MakeDecisionViewController.swift in Sources */,
 				A2BC9BA22532E0BA00E4CBEA /* PaperOnboardingDelegate.swift in Sources */,
+				0AB2383526CDD588007D54EB /* InbrainAIViewController.swift in Sources */,
 				A26A1F2C24E0CF2400F40539 /* AppDelegate.swift in Sources */,
 				A2BC9B862532D8AF00E4CBEA /* OnboardingViewController.swift in Sources */,
 				A26A1F5E24E2064F00F40539 /* TextfieldNice.swift in Sources */,
@@ -604,6 +619,7 @@
 				A280A83124E57F8F0081404E /* PayoutsViewController.swift in Sources */,
 				A2CE3F5724E39B5C00318EED /* GlobalVariables.swift in Sources */,
 				A26A1F2E24E0CF2400F40539 /* SceneDelegate.swift in Sources */,
+				0AB2383326CDD3F4007D54EB /* InbrainAI.swift in Sources */,
 				A26A1F5C24E2011D00F40539 /* AwsRequests.swift in Sources */,
 				A2F8799224E3037C0091940E /* BalanceViewController.swift in Sources */,
 				A2BC9BA32532E0BA00E4CBEA /* FillAnimationView.swift in Sources */,

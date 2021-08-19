@@ -36,7 +36,7 @@ class OfferWallViewController: UIViewController {
     
     
     @IBAction func goToInvite(_ sender: Any) {
-        self.performSegue(withIdentifier: "invite", sender: nil)
+        self.performSegue(withIdentifier: "inbrain", sender: nil)
     }
     
 

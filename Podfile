@@ -12,6 +12,7 @@ target 'Sika' do
   pod 'Siren'
   pod 'Firebase/Analytics'
   pod 'Firebase/Messaging'
+  pod 'InBrainSurveys'
 
 
 

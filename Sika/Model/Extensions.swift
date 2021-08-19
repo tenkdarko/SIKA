@@ -18,8 +18,6 @@ extension UIViewController {
 
         self.present(alert, animated: true)
     }
-    
-
 }
 
 
@@ -27,6 +25,4 @@ extension Notification.Name {
     static let didReceiveData = Notification.Name("didReceiveData")
     static let pushnotifi = Notification.Name("pushnotifi")
     static let refreshData = Notification.Name("refreshData")
-
-
 }
