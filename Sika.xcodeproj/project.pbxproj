@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		00F6F0168D6A77445A352726 /* Pods_Sika.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41365808BEB4EF6921CFD54D /* Pods_Sika.framework */; };
-		0AB2383326CDD3F4007D54EB /* InbrainAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB2383226CDD3F4007D54EB /* InbrainAI.swift */; };
 		0AB2383526CDD588007D54EB /* InbrainAIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB2383426CDD588007D54EB /* InbrainAIViewController.swift */; };
 		0AB2383826CE22EA007D54EB /* ProviderLandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB2383726CE22EA007D54EB /* ProviderLandingPage.swift */; };
 		0AB2383A26CE278E007D54EB /* ProviderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB2383926CE278E007D54EB /* ProviderTableViewCell.swift */; };
@@ -27,7 +26,6 @@
 		A26A1F4324E0CF2700F40539 /* SikaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26A1F4224E0CF2700F40539 /* SikaTests.swift */; };
 		A26A1F5124E0CFE100F40539 /* PreLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A26A1F5024E0CFE100F40539 /* PreLogin.storyboard */; };
 		A26A1F5424E0F45F00F40539 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26A1F5324E0F45F00F40539 /* RoundButton.swift */; };
-		A26A1F5624E1045300F40539 /* OfferWallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26A1F5524E1045300F40539 /* OfferWallViewController.swift */; };
 		A26A1F5C24E2011D00F40539 /* AwsRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26A1F5B24E2011D00F40539 /* AwsRequests.swift */; };
 		A26A1F5E24E2064F00F40539 /* TextfieldNice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26A1F5D24E2064F00F40539 /* TextfieldNice.swift */; };
 		A26A1F6024E206F100F40539 /* protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26A1F5F24E206F100F40539 /* protocols.swift */; };
@@ -73,7 +71,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0AB2383226CDD3F4007D54EB /* InbrainAI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InbrainAI.swift; sourceTree = "<group>"; };
 		0AB2383426CDD588007D54EB /* InbrainAIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InbrainAIViewController.swift; sourceTree = "<group>"; };
 		0AB2383726CE22EA007D54EB /* ProviderLandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderLandingPage.swift; sourceTree = "<group>"; };
 		0AB2383926CE278E007D54EB /* ProviderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderTableViewCell.swift; sourceTree = "<group>"; };
@@ -98,7 +95,6 @@
 		A26A1F4424E0CF2700F40539 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A26A1F5024E0CFE100F40539 /* PreLogin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PreLogin.storyboard; sourceTree = "<group>"; };
 		A26A1F5324E0F45F00F40539 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
-		A26A1F5524E1045300F40539 /* OfferWallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferWallViewController.swift; sourceTree = "<group>"; };
 		A26A1F5B24E2011D00F40539 /* AwsRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwsRequests.swift; sourceTree = "<group>"; };
 		A26A1F5D24E2064F00F40539 /* TextfieldNice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldNice.swift; sourceTree = "<group>"; };
 		A26A1F5F24E206F100F40539 /* protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protocols.swift; sourceTree = "<group>"; };
@@ -158,7 +154,6 @@
 		0AB2383126CDD3D7007D54EB /* SurveyProviders */ = {
 			isa = PBXGroup;
 			children = (
-				0AB2383226CDD3F4007D54EB /* InbrainAI.swift */,
 			);
 			path = SurveyProviders;
 			sourceTree = "<group>";
@@ -268,7 +263,6 @@
 				A2D9C19424E4A5DB00470496 /* cells */,
 				A2CE3F5924E43C8800318EED /* Wallet */,
 				A2CE3F5824E43C5700318EED /* PreLogin */,
-				A26A1F5524E1045300F40539 /* OfferWallViewController.swift */,
 				A2F8799324E326420091940E /* CustomTabViewController.swift */,
 				A2CE3F5424E341F000318EED /* MoreInfo.swift */,
 				A2260AB824E86BD50045B10E /* InviteFriendsViewController.swift */,
@@ -606,7 +600,6 @@
 				A2260AB524E5BA050045B10E /* walletTableViewCell.swift in Sources */,
 				A2260AB124E583180045B10E /* ShowPayoutsTableViewCell.swift in Sources */,
 				A2260AB724E6215A0045B10E /* summaryTableViewCell.swift in Sources */,
-				A26A1F5624E1045300F40539 /* OfferWallViewController.swift in Sources */,
 				A2BC9B9F2532E0BA00E4CBEA /* PageView.swift in Sources */,
 				A2BC9BA52532E0BA00E4CBEA /* GestureControl.swift in Sources */,
 				A2F8799424E326420091940E /* CustomTabViewController.swift in Sources */,
@@ -634,7 +627,6 @@
 				A280A83124E57F8F0081404E /* PayoutsViewController.swift in Sources */,
 				A2CE3F5724E39B5C00318EED /* GlobalVariables.swift in Sources */,
 				A26A1F2E24E0CF2400F40539 /* SceneDelegate.swift in Sources */,
-				0AB2383326CDD3F4007D54EB /* InbrainAI.swift in Sources */,
 				0AB2383826CE22EA007D54EB /* ProviderLandingPage.swift in Sources */,
 				A26A1F5C24E2011D00F40539 /* AwsRequests.swift in Sources */,
 				A2F8799224E3037C0091940E /* BalanceViewController.swift in Sources */,

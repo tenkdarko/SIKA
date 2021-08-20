@@ -16,18 +16,20 @@ class InviteFriendsViewController: UIViewController {
     @IBOutlet var referralEarned: UILabel!
     
     
-    
-    
-    
     @IBOutlet var referralID: UILabel!
 
     
+    @IBOutlet weak var viewDesign: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         referralID.text = GlobalVariables.singleton.userInfo.uuid
         // Do any additional setup after loading the view.
+        
+        viewDesign.layer.borderWidth = 1
+        viewDesign.layer.cornerRadius = 5
+        viewDesign.layer.borderColor = UIColor.init(r: 204, g: 204, b: 204).cgColor
     }
     
     

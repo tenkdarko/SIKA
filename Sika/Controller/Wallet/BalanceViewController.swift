@@ -60,50 +60,50 @@ class BalanceViewController: UIViewController, UITableViewDataSource, UITableVie
         self.tabBarController?.selectedIndex = 1
     }
     
-//    func earnCoinsAdgate(){
-//          if adgateMedia == nil {
-//               adgateMedia = AdGateMedia(rewardCode: rewardCode, userId: userId, parentViewController: self)
-//                       print("addg is nill")
-//           } else {
-//               adgateMedia?.strRewardCode = rewardCode
-//               adgateMedia?.strUserId = userId
-//                       print("addg is goood")
-//           }
+    func earnCoinsAdgate(){
+          if adgateMedia == nil {
+               adgateMedia = AdGateMedia(rewardCode: rewardCode, userId: userId, parentViewController: self)
+                       print("addg is nill")
+           } else {
+               adgateMedia?.strRewardCode = rewardCode
+               adgateMedia?.strUserId = userId
+                       print("addg is goood")
+           }
+
+
+           showOfferwall()
+      }
 //
-//
-//           showOfferwall()
-//      }
-//
-//      func showOfferwall(){
-//
-//          var dictParameters = [String:String]()
-//
-//          print("loading rlll \(GlobalVariables.singleton.userInfo.referredBy)")
-//
-//          dictParameters["s2"] = GlobalVariables.singleton.userInfo.referredBy
-//
-//          let success = adgateMedia?.loadOfferWall(dictParameters, onOfferWallLoadSuccess: {
-//              print("Load Success")
-//
-//          }, onOfferWallLoadFailed: { error in
-//
-//              print("failed to load wall \(error.localizedDescription)")
-//              let alert = UIAlertController(title: "Error: Message us on IG Please", message:
-//                  error.localizedDescription, preferredStyle: .alert)
-//              let defaultAction = UIAlertAction(title: "OK", style: .default, handler: { action in
-//              })
-//              alert.addAction(defaultAction)
-//              self.present(alert, animated: true)
-//          })
-//
-//          if let success = success, success == true {
-//              adgateMedia?.showOfferWall({
-//                  print("Closed wall")
-//              })
-//          }
-//      }
-//
-//
+      func showOfferwall(){
+
+          var dictParameters = [String:String]()
+
+          print("loading rlll \(GlobalVariables.singleton.userInfo.referredBy)")
+
+          dictParameters["s2"] = GlobalVariables.singleton.userInfo.referredBy
+
+          let success = adgateMedia?.loadOfferWall(dictParameters, onOfferWallLoadSuccess: {
+              print("Load Success")
+
+          }, onOfferWallLoadFailed: { error in
+
+              print("failed to load wall \(error.localizedDescription)")
+              let alert = UIAlertController(title: "Error: Message us on IG Please", message:
+                  error.localizedDescription, preferredStyle: .alert)
+              let defaultAction = UIAlertAction(title: "OK", style: .default, handler: { action in
+              })
+              alert.addAction(defaultAction)
+              self.present(alert, animated: true)
+          })
+
+          if let success = success, success == true {
+              adgateMedia?.showOfferWall({
+                  print("Closed wall")
+              })
+          }
+      }
+
+
     
     
     
@@ -130,12 +130,12 @@ class BalanceViewController: UIViewController, UITableViewDataSource, UITableVie
         
         
         switch indexPath.row {
-        case 1:
+        case 2:
             cell.imageHere.image = UIImage(named: "invitefriends")
             cell.labelHeader.text = "Passive Earnings"
             cell.labelMessage.text = "Earn while chilling!"
             cell.buttonLink.setTitle("Learn More", for: .normal)
-        case 2:
+        case 1:
             cell.imageHere.image = UIImage(named: "instagram")
             cell.labelHeader.text = "Follow Us"
             cell.labelMessage.text = "For rewards / giveaways"

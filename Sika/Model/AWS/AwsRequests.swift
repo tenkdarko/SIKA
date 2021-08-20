@@ -21,36 +21,27 @@ class AwsRequests {
     let cashOut = "https://2v160777d5.execute-api.us-east-1.amazonaws.com/conversions/cashout"
     let deleteAccount = "https://2v160777d5.execute-api.us-east-1.amazonaws.com/conversions/deleteaccount"
     let loginToApp = "https://2v160777d5.execute-api.us-east-1.amazonaws.com/conversions/login"
+    let dailyRewards = "https://2v160777d5.execute-api.us-east-1.amazonaws.com/conversions/dailyrewards"
+
     
     let global = GlobalVariables.singleton
     
     func registerUser(uniqueID: String, referredBy: String, password: String, completion: @escaping (String) -> Void){
         let params = ["uniqueID": uniqueID, "referredBy": referredBy, "password": password]
         AF.request(register, parameters: params).responseJSON { (response) in
-            
             if response.response?.headers.dictionary["takenusername"]?.description == "taking" {
                 completion("takenusername")
                 return
             }
-            
-            
             if response.response?.headers.dictionary["referralcode"]?.description == "invalid" {
                 completion("invalidcode")
                 return
             }
-            
-            
             if (response.response?.headers.dictionary["account"]) == "created" {
-                
                 completion("true")
-
                 return
             }
-            
             completion("error")
-
-            
-            
         }
     }
     
@@ -58,32 +49,43 @@ class AwsRequests {
     func loginToApp(uniqueID: String, password: String, completion: @escaping (String) -> Void){
         let params = ["uniqueID": uniqueID, "password": password]
         AF.request(loginToApp, parameters: params).responseJSON { (response) in
-            
-      
-            
             if (response.response?.headers.dictionary["access"]?.description) == "granted" {
-                
                 let saveAccountReferralID = UserDefaults.standard
                 saveAccountReferralID.set(uniqueID, forKey: "uniqueId")
                 GlobalVariables.singleton.userInfo.uuid = uniqueID
-                           
+                completion("true")
+                return
+            }
+            if (response.response?.headers.dictionary["access"]) == nil {
+                completion("error")
+                return
+            }
+            completion("denied")
+        }
+    }
+    
+    func dailyRewards(uniqueID: String, completion: @escaping (String) -> Void){
+        let params = ["uniqueID": uniqueID]
+        AF.request(dailyRewards, parameters: params).responseJSON { (response) in
+            if (response.response?.headers.dictionary["dailyrewards"]?.description) == "true" {
+                
                 completion("true")
                 return
             }
             
-            if (response.response?.headers.dictionary["access"]) == nil {
-                                
-                completion("error")
+            if (response.response?.headers.dictionary["dailyrewards"]?.description) == "false" {
+                
+                completion("false")
                 return
             }
             
-            
-            
+            if (response.response?.headers.dictionary["access"]) == nil {
+                completion("error")
+                return
+            }
             completion("denied")
-     
         }
     }
-    
     
     
     func getUserInfo(uniqueID: String,completion: @escaping (Bool) -> Void){
@@ -91,15 +93,11 @@ class AwsRequests {
         AF.request(getUserInfo, parameters: params).responseJSON { (response) in
                         
             let info = JSON(response.data)
-            
-//            print("info", info)
-            
+                        
             guard info["item"] != "null" else{
                 completion(false)
                 return
             }
-            
-            
             
             let rewards = info["Item"]["rewards"].intValue
             let totalrewards = info["Item"]["totalrewards"].intValue
@@ -120,8 +118,6 @@ class AwsRequests {
             self.global.userInfo.referredBy = referredBy
             self.global.userInfo.invitedFriends = invitedFriends
             self.global.userInfo.inviteDetailed = invite
-
-            
                 completion(true)
         }
     }
@@ -129,8 +125,6 @@ class AwsRequests {
     
     func cashOut(uniqueID: String, cashOutValue: String, email: String, paymentType: String, password: String, completion: @escaping (Int) -> Void){
         let params = ["uniqueID": GlobalVariables.singleton.userInfo.uuid, "cashOutValue": cashOutValue, "email": email, "paymentType": paymentType, "password": password]
-        
-        
         AF.request(cashOut, parameters: params).responseJSON { (response) in
                         
             let info = JSON(response.data)
@@ -149,13 +143,11 @@ class AwsRequests {
             }
             
             if (response.response?.headers.dictionary["Status"]) == "done" {
-                
                 let rewards = info["Item"]["rewards"].intValue
                  let totalrewards = info["Item"]["totalrewards"].intValue
                  let withdrawn = info["Item"]["withdrawnrewards"].intValue
                  let referralRewards = info["Item"]["referralrewards"].intValue
                  let payments = JSON(info["Item"]["payments"])
-
                  self.global.userInfo.rewards = rewards
                  self.global.userInfo.totalrewards = totalrewards
                  self.global.userInfo.withdrawn = withdrawn
@@ -165,19 +157,12 @@ class AwsRequests {
 
                 GlobalVariables.singleton.userInfo.rewards = rewards
                 self.updateInfoDelegate?.updateInfo()
-                
                 NotificationCenter.default.post(name: .didReceiveData, object: nil)
-                
                     completion(200)
-
                 return
             }else{
                 completion(-200)
             }
-            
-            
-            
-
         }
     }
     
@@ -186,19 +171,13 @@ class AwsRequests {
     func deleteAccount(uniqueID: String,completion: @escaping (Bool) -> Void){
         let params = ["uniqueID": GlobalVariables.singleton.userInfo.uuid]
         AF.request(deleteAccount, parameters: params).responseJSON { (response) in
-                        
             let info = JSON(response.data)
-            
             print("info", info)
-            
             guard info["item"] != "null" else{
                 completion(false)
                 return
             }
-        
-            
                 completion(true)
         }
     }
-    
 }
