@@ -31,7 +31,7 @@ class BalanceViewController: UIViewController, UITableViewDataSource, UITableVie
     
     
     @IBAction func buttonClicked(_ sender: UIButton) {
-                
+    
         if sender.titleLabel?.text == "Learn More" {
             self.performSegue(withIdentifier: "showInvite", sender: nil)
         }else if sender.titleLabel?.text == "Follow"{
@@ -56,53 +56,54 @@ class BalanceViewController: UIViewController, UITableViewDataSource, UITableVie
     
     
     @IBAction func showCoins(_ sender: Any) {
-        earnCoinsAdgate()
+//        earnCoinsAdgate()
+        self.tabBarController?.selectedIndex = 1
     }
     
-    func earnCoinsAdgate(){
-          if adgateMedia == nil {
-               adgateMedia = AdGateMedia(rewardCode: rewardCode, userId: userId, parentViewController: self)
-                       print("addg is nill")
-           } else {
-               adgateMedia?.strRewardCode = rewardCode
-               adgateMedia?.strUserId = userId
-                       print("addg is goood")
-           }
-           
-           
-           showOfferwall()
-      }
-      
-      func showOfferwall(){
-          
-          var dictParameters = [String:String]()
-          
-          print("loading rlll \(GlobalVariables.singleton.userInfo.referredBy)")
-          
-          dictParameters["s2"] = GlobalVariables.singleton.userInfo.referredBy
-
-          let success = adgateMedia?.loadOfferWall(dictParameters, onOfferWallLoadSuccess: {
-              print("Load Success")
-
-          }, onOfferWallLoadFailed: { error in
-              
-              print("failed to load wall \(error.localizedDescription)")
-              let alert = UIAlertController(title: "Error: Message us on IG Please", message:
-                  error.localizedDescription, preferredStyle: .alert)
-              let defaultAction = UIAlertAction(title: "OK", style: .default, handler: { action in
-              })
-              alert.addAction(defaultAction)
-              self.present(alert, animated: true)
-          })
-
-          if let success = success, success == true {
-              adgateMedia?.showOfferWall({
-                  print("Closed wall")
-              })
-          }
-      }
-    
-    
+//    func earnCoinsAdgate(){
+//          if adgateMedia == nil {
+//               adgateMedia = AdGateMedia(rewardCode: rewardCode, userId: userId, parentViewController: self)
+//                       print("addg is nill")
+//           } else {
+//               adgateMedia?.strRewardCode = rewardCode
+//               adgateMedia?.strUserId = userId
+//                       print("addg is goood")
+//           }
+//
+//
+//           showOfferwall()
+//      }
+//
+//      func showOfferwall(){
+//
+//          var dictParameters = [String:String]()
+//
+//          print("loading rlll \(GlobalVariables.singleton.userInfo.referredBy)")
+//
+//          dictParameters["s2"] = GlobalVariables.singleton.userInfo.referredBy
+//
+//          let success = adgateMedia?.loadOfferWall(dictParameters, onOfferWallLoadSuccess: {
+//              print("Load Success")
+//
+//          }, onOfferWallLoadFailed: { error in
+//
+//              print("failed to load wall \(error.localizedDescription)")
+//              let alert = UIAlertController(title: "Error: Message us on IG Please", message:
+//                  error.localizedDescription, preferredStyle: .alert)
+//              let defaultAction = UIAlertAction(title: "OK", style: .default, handler: { action in
+//              })
+//              alert.addAction(defaultAction)
+//              self.present(alert, animated: true)
+//          })
+//
+//          if let success = success, success == true {
+//              adgateMedia?.showOfferWall({
+//                  print("Closed wall")
+//              })
+//          }
+//      }
+//
+//
     
     
     

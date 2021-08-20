@@ -18,17 +18,14 @@ class InviteFriendsViewController: UIViewController {
     
     
     
-    @IBOutlet var summaryView: UIView!
+    
     @IBOutlet var referralID: UILabel!
+
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
-        summaryView.layer.borderWidth = 1
-         summaryView.layer.cornerRadius = 5
-         summaryView.layer.borderColor = UIColor.init(r: 204, g: 204, b: 204).cgColor
-        
         referralID.text = GlobalVariables.singleton.userInfo.uuid
         // Do any additional setup after loading the view.
     }
@@ -47,16 +44,6 @@ class InviteFriendsViewController: UIViewController {
     @IBAction func trueCancel(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
     
     
     

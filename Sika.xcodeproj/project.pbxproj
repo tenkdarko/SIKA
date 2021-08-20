@@ -10,6 +10,8 @@
 		00F6F0168D6A77445A352726 /* Pods_Sika.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41365808BEB4EF6921CFD54D /* Pods_Sika.framework */; };
 		0AB2383326CDD3F4007D54EB /* InbrainAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB2383226CDD3F4007D54EB /* InbrainAI.swift */; };
 		0AB2383526CDD588007D54EB /* InbrainAIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB2383426CDD588007D54EB /* InbrainAIViewController.swift */; };
+		0AB2383826CE22EA007D54EB /* ProviderLandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB2383726CE22EA007D54EB /* ProviderLandingPage.swift */; };
+		0AB2383A26CE278E007D54EB /* ProviderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB2383926CE278E007D54EB /* ProviderTableViewCell.swift */; };
 		A218C11324E21BEB007779BD /* InvitationCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A218C11224E21BEB007779BD /* InvitationCodeViewController.swift */; };
 		A218C11524E23D21007779BD /* MakeDecisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A218C11424E23D21007779BD /* MakeDecisionViewController.swift */; };
 		A2260AB124E583180045B10E /* ShowPayoutsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2260AB024E583180045B10E /* ShowPayoutsTableViewCell.swift */; };
@@ -73,6 +75,8 @@
 /* Begin PBXFileReference section */
 		0AB2383226CDD3F4007D54EB /* InbrainAI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InbrainAI.swift; sourceTree = "<group>"; };
 		0AB2383426CDD588007D54EB /* InbrainAIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InbrainAIViewController.swift; sourceTree = "<group>"; };
+		0AB2383726CE22EA007D54EB /* ProviderLandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderLandingPage.swift; sourceTree = "<group>"; };
+		0AB2383926CE278E007D54EB /* ProviderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderTableViewCell.swift; sourceTree = "<group>"; };
 		41365808BEB4EF6921CFD54D /* Pods_Sika.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sika.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B911AD57811F4283793C3DB /* Pods-Sika.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sika.debug.xcconfig"; path = "Target Support Files/Pods-Sika/Pods-Sika.debug.xcconfig"; sourceTree = "<group>"; };
 		A218C11224E21BEB007779BD /* InvitationCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationCodeViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +159,15 @@
 			isa = PBXGroup;
 			children = (
 				0AB2383226CDD3F4007D54EB /* InbrainAI.swift */,
+			);
+			path = SurveyProviders;
+			sourceTree = "<group>";
+		};
+		0AB2383626CE22BA007D54EB /* SurveyProviders */ = {
+			isa = PBXGroup;
+			children = (
+				0AB2383426CDD588007D54EB /* InbrainAIViewController.swift */,
+				0AB2383726CE22EA007D54EB /* ProviderLandingPage.swift */,
 			);
 			path = SurveyProviders;
 			sourceTree = "<group>";
@@ -251,6 +264,7 @@
 		A26A1F4F24E0CF7700F40539 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0AB2383626CE22BA007D54EB /* SurveyProviders */,
 				A2D9C19424E4A5DB00470496 /* cells */,
 				A2CE3F5924E43C8800318EED /* Wallet */,
 				A2CE3F5824E43C5700318EED /* PreLogin */,
@@ -258,7 +272,6 @@
 				A2F8799324E326420091940E /* CustomTabViewController.swift */,
 				A2CE3F5424E341F000318EED /* MoreInfo.swift */,
 				A2260AB824E86BD50045B10E /* InviteFriendsViewController.swift */,
-				0AB2383426CDD588007D54EB /* InbrainAIViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -412,6 +425,7 @@
 				A2260AB624E6215A0045B10E /* summaryTableViewCell.swift */,
 				A2BC9B78252FA82600E4CBEA /* PaymentHeaderCell.swift */,
 				A2B826F72543CCA60023FECB /* ReferralCell.swift */,
+				0AB2383926CE278E007D54EB /* ProviderTableViewCell.swift */,
 			);
 			path = cells;
 			sourceTree = "<group>";
@@ -607,6 +621,7 @@
 				A218C11524E23D21007779BD /* MakeDecisionViewController.swift in Sources */,
 				A2BC9BA22532E0BA00E4CBEA /* PaperOnboardingDelegate.swift in Sources */,
 				0AB2383526CDD588007D54EB /* InbrainAIViewController.swift in Sources */,
+				0AB2383A26CE278E007D54EB /* ProviderTableViewCell.swift in Sources */,
 				A26A1F2C24E0CF2400F40539 /* AppDelegate.swift in Sources */,
 				A2BC9B862532D8AF00E4CBEA /* OnboardingViewController.swift in Sources */,
 				A26A1F5E24E2064F00F40539 /* TextfieldNice.swift in Sources */,
@@ -620,6 +635,7 @@
 				A2CE3F5724E39B5C00318EED /* GlobalVariables.swift in Sources */,
 				A26A1F2E24E0CF2400F40539 /* SceneDelegate.swift in Sources */,
 				0AB2383326CDD3F4007D54EB /* InbrainAI.swift in Sources */,
+				0AB2383826CE22EA007D54EB /* ProviderLandingPage.swift in Sources */,
 				A26A1F5C24E2011D00F40539 /* AwsRequests.swift in Sources */,
 				A2F8799224E3037C0091940E /* BalanceViewController.swift in Sources */,
 				A2BC9BA32532E0BA00E4CBEA /* FillAnimationView.swift in Sources */,

@@ -30,15 +30,11 @@ class InbrainAIViewController: UIViewController, InBrainDelegate {
         inBrain.nativeSurveysDelegate = self
         inBrain.getNativeSurveys()
 
-
     }
     
     @IBAction func showInBrain(_ sender: UIButton) {
         print("LOADING SUREY")
         
-        
-        
-
         inBrain.checkForAvailableSurveys { [weak self] hasSurveys, _  in
             self?.view.isUserInteractionEnabled = true
 
