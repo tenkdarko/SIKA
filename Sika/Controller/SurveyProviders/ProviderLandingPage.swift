@@ -40,11 +40,11 @@ class ProviderLandingPage: UIViewController, UITableViewDelegate, UITableViewDat
         startActivity()
         aws.dailyRewards(uniqueID: userId) { result in
             if result == "true"{
-                self.showAlert(title: "Coins Added", message: "20 coins has been added to your account.")
+                self.showAlert(title: "Coins Added", message: "20 coins has been added to your account. Make sure to follow our Instagram for private giveaways @sikacoins")
                 self.activityind.stopAnimating()
 
             }else if result == "false" {
-                self.showAlert(title: "Coins Already Redeemed", message: "Come back tomorrow to redeem coins again")
+                self.showAlert(title: "Coins Already Redeemed", message: "Come back tomorrow to redeem coins again. Make sure to follow our Instagram for private giveaways @sikacoins")
                 self.activityind.stopAnimating()
             }
             else{
