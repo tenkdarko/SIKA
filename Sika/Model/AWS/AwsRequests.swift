@@ -67,6 +67,21 @@ class AwsRequests {
     func dailyRewards(uniqueID: String, completion: @escaping (String) -> Void){
         let params = ["uniqueID": uniqueID]
         AF.request(dailyRewards, parameters: params).responseJSON { (response) in
+            
+            
+            print("KWAME HEADERS :", response.response?.headers.dictionary["timestamp"])
+            
+            var awsTimestamp = response.response?.headers.dictionary["timestamp"]
+            
+            var intAwsTimestamp = Double(awsTimestamp!)! / 1000.0
+            
+            var currentDate = Date(timeIntervalSince1970: TimeInterval(intAwsTimestamp))
+            
+            GlobalVariables.singleton.awsExpiredTimestamp = currentDate
+
+            
+            print("KWAME THIS IS DATE", currentDate)
+            
             if (response.response?.headers.dictionary["dailyrewards"]?.description) == "true" {
                 
                 completion("true")

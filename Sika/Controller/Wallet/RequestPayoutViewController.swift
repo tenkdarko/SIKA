@@ -274,3 +274,12 @@ func shadowDecorate() {
      self.layer.shadowPath = UIBezierPath(roundedRect: self.bounds, cornerRadius: self.contentView.layer.cornerRadius).cgPath
 }
 }
+
+
+
+
+
+
+
+
+

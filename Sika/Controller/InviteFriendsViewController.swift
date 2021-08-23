@@ -43,9 +43,8 @@ class InviteFriendsViewController: UIViewController {
     
     
     
-    @IBAction func trueCancel(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
+
+    
     
     
     
@@ -92,8 +91,8 @@ class InviteFriendsViewController: UIViewController {
     
 
     @IBAction func shareWithFriends(_ sender: Any) {
-        let string = "Download $IKA to earn money doing surveys. With my code you will get $0.30 start bonus! My code is: \(GlobalVariables.singleton.userInfo.uuid) - sikacoinapp.com"
-        let url = URL(string: "https://www.sikacoinapp.com")!
+        let string = "Download $IKA to earn money. With my code you will get $0.30! My code is -> \(GlobalVariables.singleton.userInfo.uuid) <-"
+        let url = URL(string: "https://apps.apple.com/cv/app/sika-cash-for-surveys/id1535149985")!
         let image = UIImage(named: "sikalogo.png")
       
 

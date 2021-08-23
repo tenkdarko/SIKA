@@ -20,10 +20,12 @@ struct userInfoStruct {
     var uuid = ""
     var payments: JSON = []
     var inviteDetailed: JSON = []
+    
 }
 
 class GlobalVariables {
     static let singleton = GlobalVariables()
     
     var userInfo = userInfoStruct()
+    var awsExpiredTimestamp: Date?
 }

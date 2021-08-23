@@ -19,6 +19,38 @@ class ProviderLandingPage: UIViewController, UITableViewDelegate, UITableViewDat
     let aws = AwsRequests.singleton
     var activityind : UIActivityIndicatorView = UIActivityIndicatorView()
 
+    var timer: Timer!
+    var endTime: Date?
+    
+        
+    
+    let saveAccountReferralID = UserDefaults.standard
+    
+    @IBOutlet weak var providerTable: UITableView!
+    @IBOutlet weak var redeemCoinButton: RoundButton!
+    
+    @IBOutlet weak var timeLeftLabel: UILabel!
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        providerTable.delegate = self
+        providerTable.dataSource = self
+        loadInbrainSurveys()
+        
+        startClock()
+                
+        // Do any additional setup after loading the view.
+        self.providerTable.tableFooterView = UIView(frame: CGRect.zero)
+
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.providerTable.deselectSelectedRow(animated: true)
+        redeemCoinButton.isEnabled = true
+
+    }
     
     func startActivity(){
         activityind.center = self.view.center
@@ -28,15 +60,46 @@ class ProviderLandingPage: UIViewController, UITableViewDelegate, UITableViewDat
         activityind.startAnimating()
     }
     
-    @IBOutlet weak var providerTable: UITableView!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        3
+        2
+    }
+    
+    func startClock(){
+        let date = UserDefaults.standard.object(forKey: "setRedeemTimer") as? Date
+
+         
+        if date != nil {
+            
+            print("KWAME WE SETTTT")
+
+            
+            endTime = date
+            
+            timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(UpdateTime), userInfo: nil, repeats: true)
+            
+        }else{
+            print("KWAME WE NOT SET")
+            
+            redeemCoinButton.setTitle("+20 Coins!", for: .normal)
+            redeemCoinButton.isEnabled = true
+        }
+        
     }
     
     
     @IBAction func buttonClicked(_ sender: Any) {
         print("aHELO WORLD HAHAHAHA")
+        
+        let nowDate = Date()
+        
+        endTime = Calendar.current.date(byAdding: .day, value: 1, to: nowDate)!
+        
+        saveAccountReferralID.set(endTime as! NSCoding, forKey: "setRedeemTimer")
+
+        redeemCoinButton.isEnabled = false
+        startClock()
+        
         startActivity()
         aws.dailyRewards(uniqueID: userId) { result in
             if result == "true"{
@@ -52,7 +115,6 @@ class ProviderLandingPage: UIViewController, UITableViewDelegate, UITableViewDat
                 self.activityind.stopAnimating()
             }
         }
-
     }
     
     
@@ -60,18 +122,6 @@ class ProviderLandingPage: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         
-        if indexPath.row == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "walletCell", for: indexPath) as! walletTableViewCell
-            
-            cell.imageHere.image = UIImage(named: "icons8-calendar-4")
-            cell.labelHeader.text = "Attendence Rewards"
-            cell.labelMessage.text = "Check-in Daily"
-            cell.buttonLink.setTitle("+20 FREE", for: .normal)
-            
-            cell.selectionStyle = .none
-            
-            return cell
-        }else{
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "providerCell", for: indexPath) as! ProviderTableViewCell
 
@@ -95,17 +145,13 @@ class ProviderLandingPage: UIViewController, UITableViewDelegate, UITableViewDat
         cell.viewProvider.layer.shadowPath = UIBezierPath(roundedRect: cell.viewProvider.bounds, cornerRadius: cell
                                                 .contentView.layer.cornerRadius).cgPath
         
-            if indexPath.row == 1 {
+            if indexPath.row == 0 {
                 cell.providerImage.image = UIImage(named: "inbrainLogo")
             }else {
                 cell.providerImage.image = UIImage(named: "adgateMedia")
             }
         
-
         return cell
-        }
-        
-        
         
     }
     
@@ -124,25 +170,13 @@ class ProviderLandingPage: UIViewController, UITableViewDelegate, UITableViewDat
         default:
             return
         }
-        
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        self.providerTable.deselectSelectedRow(animated: true)
-    }
+
     
     
     @IBOutlet weak var providerTableView: UITableView!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        providerTable.delegate = self
-        providerTable.dataSource = self
-        loadInbrainSurveys()
-        // Do any additional setup after loading the view.
-        self.providerTable.tableFooterView = UIView(frame: CGRect.zero)
-
-    }
     
     func loadInbrainSurveys(){
 //        startActivity()
@@ -168,7 +202,6 @@ class ProviderLandingPage: UIViewController, UITableViewDelegate, UITableViewDat
     
     
     func loadAdgateMedia(){
-//        startActivity()
         let rewardCode = "n6ibqQ"
         if adgateMedia == nil {
              adgateMedia = AdGateMedia(rewardCode: rewardCode, userId: userId, parentViewController: self)
@@ -205,12 +238,45 @@ class ProviderLandingPage: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath.row == 0 {
-            return 70
-        }else {
             return 125.0;//Choose your custom row height
+        
+    }
+    
+    
+    
+    @objc func UpdateTime() {
+        let userCalendar = Calendar.current
+        // Set Current Date
+        let date = Date()
+
+        let timeLeft = userCalendar.dateComponents([.day, .hour, .minute, .second], from: date, to: endTime!)
+        // Display Countdown
+        
+        timeLeftLabel.text = "Time Left: \(timeLeft.hour!)h \(timeLeft.minute!)m \(timeLeft.second!)s"
+        
+        endEvent(currentdate: date, eventdate: endTime!)
+    }
+    
+    func endEvent(currentdate: Date, eventdate: Date) {
+        
+        
+        
+        if currentdate >= eventdate {
+            
+            print("WE IN TRUE HHAHAHA")
+            
+            redeemCoinButton.setTitle("+20 Coins!", for: .disabled)
+            // Stop Timer
+            timer.invalidate()
+        }else {
+            print("WE IN ELSEEEEE")
+            redeemCoinButton.setTitle("Redeemed", for: .disabled)
+            redeemCoinButton.backgroundColor = UIColor(r: 204, g: 204, b: 204)
         }
     }
+    
+    
+    
 }
 
 

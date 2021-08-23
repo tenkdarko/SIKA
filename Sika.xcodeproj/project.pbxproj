@@ -57,7 +57,6 @@
 		A2CE3F5B24E43D1000318EED /* RequestPayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CE3F5A24E43D1000318EED /* RequestPayoutViewController.swift */; };
 		A2D9C19624E4A5FD00470496 /* PaymentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D9C19524E4A5FD00470496 /* PaymentCollectionViewCell.swift */; };
 		A2F8799224E3037C0091940E /* BalanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F8799124E3037C0091940E /* BalanceViewController.swift */; };
-		A2F8799424E326420091940E /* CustomTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F8799324E326420091940E /* CustomTabViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,7 +127,6 @@
 		A2D9C19524E4A5FD00470496 /* PaymentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCollectionViewCell.swift; sourceTree = "<group>"; };
 		A2E7C8D4252E199B00A6507C /* Sika-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sika-Bridging-Header.h"; sourceTree = "<group>"; };
 		A2F8799124E3037C0091940E /* BalanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceViewController.swift; sourceTree = "<group>"; };
-		A2F8799324E326420091940E /* CustomTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabViewController.swift; sourceTree = "<group>"; };
 		C110237BE02CF2CBA0ABC25D /* Pods-Sika.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sika.release.xcconfig"; path = "Target Support Files/Pods-Sika/Pods-Sika.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -263,7 +261,6 @@
 				A2D9C19424E4A5DB00470496 /* cells */,
 				A2CE3F5924E43C8800318EED /* Wallet */,
 				A2CE3F5824E43C5700318EED /* PreLogin */,
-				A2F8799324E326420091940E /* CustomTabViewController.swift */,
 				A2CE3F5424E341F000318EED /* MoreInfo.swift */,
 				A2260AB824E86BD50045B10E /* InviteFriendsViewController.swift */,
 			);
@@ -602,7 +599,6 @@
 				A2260AB724E6215A0045B10E /* summaryTableViewCell.swift in Sources */,
 				A2BC9B9F2532E0BA00E4CBEA /* PageView.swift in Sources */,
 				A2BC9BA52532E0BA00E4CBEA /* GestureControl.swift in Sources */,
-				A2F8799424E326420091940E /* CustomTabViewController.swift in Sources */,
 				A2CE3F5B24E43D1000318EED /* RequestPayoutViewController.swift in Sources */,
 				A2BC9B9D2532E0BA00E4CBEA /* PageContainer.swift in Sources */,
 				A2CE3F5524E341F000318EED /* MoreInfo.swift in Sources */,
@@ -802,7 +798,7 @@
 				CODE_SIGN_ENTITLEMENTS = Sika/Sika.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 15;
 				DEVELOPMENT_TEAM = 7TX85HAZVQ;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Sika/Info.plist;
@@ -811,7 +807,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 4.0;
+				MARKETING_VERSION = 4.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sikacoinapp.sika;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -831,7 +827,7 @@
 				CODE_SIGN_ENTITLEMENTS = Sika/Sika.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 15;
 				DEVELOPMENT_TEAM = 7TX85HAZVQ;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Sika/Info.plist;
@@ -840,7 +836,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 4.0;
+				MARKETING_VERSION = 4.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sikacoinapp.sika;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

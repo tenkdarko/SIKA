@@ -33,7 +33,9 @@ class BalanceViewController: UIViewController, UITableViewDataSource, UITableVie
     @IBAction func buttonClicked(_ sender: UIButton) {
     
         if sender.titleLabel?.text == "Learn More" {
-            self.performSegue(withIdentifier: "showInvite", sender: nil)
+            
+            self.tabBarController?.selectedIndex = 2
+            
         }else if sender.titleLabel?.text == "Follow"{
 
             let instURL: NSURL = NSURL (string: "instagram://user?username=sikacoins")! // Replace = Instagram by the your instagram user name
