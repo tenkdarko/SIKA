@@ -18,11 +18,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     let gcmMessageIDKey = "sikafirebase"
-    
+    var window: UIWindow?
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-//        Siren.shared.wail() // Line 2
+        window?.makeKeyAndVisible()
+
+        Siren.shared.wail() // Line 2
 
         annoyingRuleExample()
         
@@ -34,11 +36,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         
 
-        
         NotificationCenter.default.addObserver(self, selector: #selector(pushFirebase(_:)), name: .pushnotifi, object: nil)
         
 
-        
         return true
     }
     

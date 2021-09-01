@@ -70,6 +70,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AB1F7D826D7338B00972982 /* KAlert.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KAlert.framework; path = "../Downloads/KCustomAlert-master 2/KAlert.framework"; sourceTree = "<group>"; };
 		0AB2383426CDD588007D54EB /* InbrainAIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InbrainAIViewController.swift; sourceTree = "<group>"; };
 		0AB2383726CE22EA007D54EB /* ProviderLandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderLandingPage.swift; sourceTree = "<group>"; };
 		0AB2383926CE278E007D54EB /* ProviderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderTableViewCell.swift; sourceTree = "<group>"; };
@@ -177,6 +178,7 @@
 		48B6DA8E9B5F9AC042AD9C31 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0AB1F7D826D7338B00972982 /* KAlert.framework */,
 				41365808BEB4EF6921CFD54D /* Pods_Sika.framework */,
 			);
 			name = Frameworks;
@@ -798,16 +800,18 @@
 				CODE_SIGN_ENTITLEMENTS = Sika/Sika.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 15;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = 7TX85HAZVQ;
 				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = Sika/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 4.1;
+				MARKETING_VERSION = 4.4;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sikacoinapp.sika;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -827,16 +831,18 @@
 				CODE_SIGN_ENTITLEMENTS = Sika/Sika.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 15;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = 7TX85HAZVQ;
 				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = Sika/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 4.1;
+				MARKETING_VERSION = 4.4;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sikacoinapp.sika;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

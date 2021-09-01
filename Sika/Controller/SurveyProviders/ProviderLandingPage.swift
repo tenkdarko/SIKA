@@ -9,6 +9,7 @@
 import UIKit
 import InBrainSurveys_SDK_Swift
 
+import StoreKit
 
 
 class ProviderLandingPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -24,12 +25,14 @@ class ProviderLandingPage: UIViewController, UITableViewDelegate, UITableViewDat
     
         
     
-    let saveAccountReferralID = UserDefaults.standard
+    let setRedeemTimerUserId = UserDefaults.standard
     
     @IBOutlet weak var providerTable: UITableView!
     @IBOutlet weak var redeemCoinButton: RoundButton!
     
     @IBOutlet weak var timeLeftLabel: UILabel!
+    
+    @IBOutlet weak var rateUs: UIView!
     
     
     override func viewDidLoad() {
@@ -43,13 +46,19 @@ class ProviderLandingPage: UIViewController, UITableViewDelegate, UITableViewDat
         // Do any additional setup after loading the view.
         self.providerTable.tableFooterView = UIView(frame: CGRect.zero)
 
+        
+        
+        if GlobalVariables.singleton.userInfo.ratedApp {
+            rateUs.isHidden = true
+        }
+                
     }
     
     
     override func viewWillAppear(_ animated: Bool) {
         self.providerTable.deselectSelectedRow(animated: true)
-        redeemCoinButton.isEnabled = true
-
+        
+        print("YO WTF KWAME WE BACK")
     }
     
     func startActivity(){
@@ -64,6 +73,68 @@ class ProviderLandingPage: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         2
     }
+    
+    
+    @IBAction func rateTheApp(_ sender: Any) {
+        
+        
+        let alert = UIAlertController(title: "Rate $IKA 5 stars", message: "Rate $IKA 5 stars in the App Store & get rewarded 100 Coins!", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Rate", style: .default, handler: { (normal) in
+            
+            
+            
+            let instURL: NSURL = NSURL (string: "itms-apps://itunes.apple.com/app/id1535149985?action=write-review")! // Replace = Instagram by the your instagram user name
+            let instWB: NSURL = NSURL (string: "https://apps.apple.com/app/id1535149985?action=write-review")! // Replace the link by your instagram weblink
+
+            if (UIApplication.shared.canOpenURL(instURL as URL)) {
+                    // Open Instagram application
+                UIApplication.shared.open(URL(string: "\(instURL)")!)
+
+                } else {
+                    // Open in Safari
+                UIApplication.shared.open(URL(string: "\(instWB)")!)
+
+                }
+            
+            self.aws.rateApp(uniqueID: self.userId) { (val) in
+                print("KWAME VAL MANNNN")
+                self.rateUs.isHidden = true
+                self.showAlert(title: "COINS CREDITED", message: "Your account was credited 100 coins")
+            }
+            
+            
+   
+            
+        }))
+        
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: { (normal) in
+            
+            
+        }))
+        
+        
+        self.present(alert, animated: true)
+
+        
+//        let instURL: NSURL = NSURL (string: "itms-apps://itunes.apple.com/app/id1535149985?action=write-review")! // Replace = Instagram by the your instagram user name
+//        let instWB: NSURL = NSURL (string: "https://apps.apple.com/app/id1535149985?action=write-review")! // Replace the link by your instagram weblink
+//
+//        if (UIApplication.shared.canOpenURL(instURL as URL)) {
+//                // Open Instagram application
+//            UIApplication.shared.open(URL(string: "\(instURL)")!)
+//
+//            } else {
+//                // Open in Safari
+//            UIApplication.shared.open(URL(string: "\(instWB)")!)
+//
+//            }
+        
+        
+    }
+    
+    
     
     func startClock(){
         let date = UserDefaults.standard.object(forKey: "setRedeemTimer") as? Date
@@ -91,11 +162,6 @@ class ProviderLandingPage: UIViewController, UITableViewDelegate, UITableViewDat
     @IBAction func buttonClicked(_ sender: Any) {
         print("aHELO WORLD HAHAHAHA")
         
-        let nowDate = Date()
-        
-        endTime = Calendar.current.date(byAdding: .day, value: 1, to: nowDate)!
-        
-        saveAccountReferralID.set(endTime as! NSCoding, forKey: "setRedeemTimer")
 
         redeemCoinButton.isEnabled = false
         startClock()
@@ -105,10 +171,25 @@ class ProviderLandingPage: UIViewController, UITableViewDelegate, UITableViewDat
             if result == "true"{
                 self.showAlert(title: "Coins Added", message: "20 coins has been added to your account. Make sure to follow our Instagram for private giveaways @sikacoins")
                 self.activityind.stopAnimating()
+                
+                let nowDate = GlobalVariables.singleton.awsExpiredTimestamp!
+                
+                self.endTime = Calendar.current.date(byAdding: .day, value: 1, to: nowDate)!
+                
+                self.setRedeemTimerUserId.set(self.endTime as! NSCoding, forKey: "setRedeemTimer")
+
+                self.startClock()
 
             }else if result == "false" {
                 self.showAlert(title: "Coins Already Redeemed", message: "Come back tomorrow to redeem coins again. Make sure to follow our Instagram for private giveaways @sikacoins")
                 self.activityind.stopAnimating()
+                let nowDate = GlobalVariables.singleton.awsExpiredTimestamp!
+                
+                self.endTime = Calendar.current.date(byAdding: .day, value: 1, to: nowDate)!
+                
+                self.setRedeemTimerUserId.set(self.endTime as! NSCoding, forKey: "setRedeemTimer")
+                self.redeemCoinButton.isEnabled = false
+                self.startClock()
             }
             else{
                 self.showAlert(title: "Oh no...", message: "Something went wrong. Please messaage us on instagram")
@@ -161,11 +242,10 @@ class ProviderLandingPage: UIViewController, UITableViewDelegate, UITableViewDat
         
         switch indexPath.row {
         case 0:
-            return
-        case 1:
             startActivity()
             showInBrain("nil")
-        case 2:
+            return
+        case 1:
             loadAdgateMedia()
         default:
             return
@@ -259,17 +339,20 @@ class ProviderLandingPage: UIViewController, UITableViewDelegate, UITableViewDat
     
     func endEvent(currentdate: Date, eventdate: Date) {
         
-        
-        
         if currentdate >= eventdate {
             
             print("WE IN TRUE HHAHAHA")
-            
-            redeemCoinButton.setTitle("+20 Coins!", for: .disabled)
+            redeemCoinButton.isEnabled = true
+            redeemCoinButton.setTitle("+20 Coins!", for: .normal)
+            timeLeftLabel.text = "Check in daily"
+
+            redeemCoinButton.backgroundColor = UIColor(r: 254, g: 136, b: 104)
+
             // Stop Timer
             timer.invalidate()
         }else {
             print("WE IN ELSEEEEE")
+
             redeemCoinButton.setTitle("Redeemed", for: .disabled)
             redeemCoinButton.backgroundColor = UIColor(r: 204, g: 204, b: 204)
         }

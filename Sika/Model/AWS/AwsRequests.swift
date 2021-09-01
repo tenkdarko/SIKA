@@ -22,7 +22,7 @@ class AwsRequests {
     let deleteAccount = "https://2v160777d5.execute-api.us-east-1.amazonaws.com/conversions/deleteaccount"
     let loginToApp = "https://2v160777d5.execute-api.us-east-1.amazonaws.com/conversions/login"
     let dailyRewards = "https://2v160777d5.execute-api.us-east-1.amazonaws.com/conversions/dailyrewards"
-
+    let rateApp = "https://2v160777d5.execute-api.us-east-1.amazonaws.com/conversions/ratedapp?uniqueID=ohno"
     
     let global = GlobalVariables.singleton
     
@@ -68,21 +68,20 @@ class AwsRequests {
         let params = ["uniqueID": uniqueID]
         AF.request(dailyRewards, parameters: params).responseJSON { (response) in
             
-            
             print("KWAME HEADERS :", response.response?.headers.dictionary["timestamp"])
             
-            var awsTimestamp = response.response?.headers.dictionary["timestamp"]
+            let awsTimestamp = response.response?.headers.dictionary["timestamp"]
             
-            var intAwsTimestamp = Double(awsTimestamp!)! / 1000.0
+            let intAwsTimestamp = Double(awsTimestamp!)! / 1000.0
             
-            var currentDate = Date(timeIntervalSince1970: TimeInterval(intAwsTimestamp))
-            
+            let currentDate = Date(timeIntervalSince1970: TimeInterval(intAwsTimestamp))
             GlobalVariables.singleton.awsExpiredTimestamp = currentDate
 
             
-            print("KWAME THIS IS DATE", currentDate)
-            
             if (response.response?.headers.dictionary["dailyrewards"]?.description) == "true" {
+            
+                print("KWAME KEEP IT SIMPLE", currentDate)
+                
                 
                 completion("true")
                 return
@@ -103,11 +102,45 @@ class AwsRequests {
     }
     
     
+    
+    
+    func rateApp(uniqueID: String, completion: @escaping (String) -> Void){
+        let params = ["uniqueID": uniqueID]
+        AF.request(rateApp, parameters: params).responseJSON { (response) in
+            
+            print("KWAME HEADERS :", response.response?.headers.dictionary["ratedApp"])
+            
+            let awsRatedApp = response.response?.headers.dictionary["ratedApp"]
+                        
+            
+            completion("true")
+            return
+            
+            if (response.response?.headers.dictionary["ratedApp"]?.description) == "true" {
+            
+                print("KWAME KEEP IT SIMPLE DONE HAHA")
+                
+                
+                completion("true")
+                return
+            }
+            
+     
+            completion("denied")
+        }
+    }
+    
+    
+    
+    
     func getUserInfo(uniqueID: String,completion: @escaping (Bool) -> Void){
         let params = ["uniqueID": GlobalVariables.singleton.userInfo.uuid]
         AF.request(getUserInfo, parameters: params).responseJSON { (response) in
                         
             let info = JSON(response.data)
+            
+            
+            print("KWAME USER INFO", info)
                         
             guard info["item"] != "null" else{
                 completion(false)
@@ -122,6 +155,7 @@ class AwsRequests {
             let invite = JSON(info["Item"]["detailedInvited"])
             let referredBy = info["Item"]["referredBy"].stringValue
             let invitedFriends = info["Item"]["invitedFriends"].intValue
+            let ratedApp = info["Item"]["ratedApp"].boolValue
 
 
             self.global.userInfo.rewards = rewards
@@ -133,6 +167,7 @@ class AwsRequests {
             self.global.userInfo.referredBy = referredBy
             self.global.userInfo.invitedFriends = invitedFriends
             self.global.userInfo.inviteDetailed = invite
+            self.global.userInfo.ratedApp = ratedApp
                 completion(true)
         }
     }

@@ -20,6 +20,7 @@ struct userInfoStruct {
     var uuid = ""
     var payments: JSON = []
     var inviteDetailed: JSON = []
+    var ratedApp: Bool = false
     
 }
 
