@@ -160,6 +160,12 @@ class BalanceViewController: UIViewController, UITableViewDataSource, UITableVie
     
     
     
+    @objc func iosUpdate(){
+        print("needs ios update hahaha")
+        self.showAppUpdateAlert(Version: GlobalVariables.singleton.appInfoVersion, Force: true, AppURL: GlobalVariables.singleton.trackViewUrl)
+    }
+    
+    
     override func viewDidLoad() {
             super.viewDidLoad()
             // Start wave
@@ -168,7 +174,11 @@ class BalanceViewController: UIViewController, UITableViewDataSource, UITableVie
         userTable.dataSource = self
         
         self.userTable.tableFooterView = UIView(frame: CGRect.zero)
-        
+
+
+        DispatchQueue.main.async {
+            CheckUpdate.shared.showUpdate(withConfirmation: false)
+        }
         
         activityind.center = self.view.center
         activityind.hidesWhenStopped = true
@@ -178,6 +188,9 @@ class BalanceViewController: UIViewController, UITableViewDataSource, UITableVie
         
         
         NotificationCenter.default.addObserver(self, selector: #selector(pushNotification), name: .didReceiveData, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(iosUpdate), name: .iosUpdate, object: nil)
+        
         }
     
     

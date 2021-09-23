@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Siren // Line 1
 import FirebaseCore
 import FirebaseMessaging
 
@@ -23,11 +22,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         window?.makeKeyAndVisible()
-
-        Siren.shared.wail() // Line 2
-
-        annoyingRuleExample()
-        
         
         FirebaseApp.configure()
 
@@ -56,34 +50,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
           let settings: UIUserNotificationSettings =
           UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
-//            application.registerUserNotificationSettings(settings)
             UIApplication.shared.registerUserNotificationSettings(settings)
         }
 
         
         UIApplication.shared.registerForRemoteNotifications()
-//        application.registerForRemoteNotifications()
     }
     
     
     
     
-    func annoyingRuleExample() {
-        let siren = Siren.shared
-        siren.rulesManager = RulesManager(globalRules: .annoying)
 
-        siren.wail { results in
-            switch results {
-            case .success(let updateResults):
-                print("AlertAction ", updateResults.alertAction)
-                print("Localization ", updateResults.localization)
-                print("Model ", updateResults.model)
-                print("UpdateType ", updateResults.updateType)
-            case .failure(let error):
-                print(error.localizedDescription)
-            }
-        }
-    }
 
     // MARK: UISceneSession Lifecycle
 

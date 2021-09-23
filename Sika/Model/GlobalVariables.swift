@@ -29,4 +29,7 @@ class GlobalVariables {
     
     var userInfo = userInfoStruct()
     var awsExpiredTimestamp: Date?
+    
+    var appInfoVersion = ""
+    var trackViewUrl = ""
 }

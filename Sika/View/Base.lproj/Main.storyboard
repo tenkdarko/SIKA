@@ -170,13 +170,13 @@
                                                                     <rect key="frame" x="0.0" y="0.0" width="171" height="67"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Completed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T59-C5-hbN">
-                                                                            <rect key="frame" x="1" y="1" width="169" height="23.5"/>
+                                                                            <rect key="frame" x="1" y="1" width="169" height="20"/>
                                                                             <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="17"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Md-bH-9FA">
-                                                                            <rect key="frame" x="1" y="29" width="169" height="23.5"/>
+                                                                            <rect key="frame" x="1" y="25.5" width="169" height="20"/>
                                                                             <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="17"/>
                                                                             <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <nil key="highlightedColor"/>
@@ -196,13 +196,13 @@
                                                                     <rect key="frame" x="199" y="0.0" width="171" height="67"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Withdrawn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bK8-t4-kPU">
-                                                                            <rect key="frame" x="1" y="1" width="169" height="23.5"/>
+                                                                            <rect key="frame" x="1" y="1" width="169" height="20"/>
                                                                             <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="17"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNi-ix-LLF">
-                                                                            <rect key="frame" x="1" y="29" width="169" height="23.5"/>
+                                                                            <rect key="frame" x="1" y="25.5" width="169" height="20"/>
                                                                             <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="17"/>
                                                                             <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <nil key="highlightedColor"/>
@@ -285,7 +285,7 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000 Coins = $1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EyI-oC-8Pl">
-                                <rect key="frame" x="138" y="94" width="138.5" height="23.5"/>
+                                <rect key="frame" x="138" y="94" width="138.5" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="138.5" id="bhK-H0-eZd"/>
                                 </constraints>
@@ -1083,13 +1083,13 @@
     </scenes>
     <designables>
         <designable name="Bfy-Vw-ifS">
-            <size key="intrinsicContentSize" width="77" height="36"/>
+            <size key="intrinsicContentSize" width="72" height="32"/>
         </designable>
         <designable name="Srq-1E-2au">
-            <size key="intrinsicContentSize" width="136" height="40"/>
+            <size key="intrinsicContentSize" width="127" height="36"/>
         </designable>
         <designable name="f92-Mo-p9Z">
-            <size key="intrinsicContentSize" width="151" height="36"/>
+            <size key="intrinsicContentSize" width="144" height="32"/>
         </designable>
         <designable name="kWe-Fx-pbl">
             <size key="intrinsicContentSize" width="45" height="24"/>

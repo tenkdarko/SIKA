@@ -58,7 +58,6 @@ class ProviderLandingPage: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewWillAppear(_ animated: Bool) {
         self.providerTable.deselectSelectedRow(animated: true)
         
-        print("YO WTF KWAME WE BACK")
     }
     
     func startActivity(){
@@ -74,15 +73,16 @@ class ProviderLandingPage: UIViewController, UITableViewDelegate, UITableViewDat
         2
     }
     
+    //It takes 1 minute and will help grow the community and provide better tasks.
+    // We put our hearts and soul into this app to bring you the best surveys.
+    
     
     @IBAction func rateTheApp(_ sender: Any) {
         
         
-        let alert = UIAlertController(title: "Rate $IKA 5 stars", message: "Rate $IKA 5 stars in the App Store & get rewarded 100 Coins!", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Rate $IKA 5☆ Earn 100 Coins!", message: "We put our heart and soul to bring you the best. This will help us provide you higher paying surveys.", preferredStyle: .alert)
         
         alert.addAction(UIAlertAction(title: "Rate", style: .default, handler: { (normal) in
-            
-            
             
             let instURL: NSURL = NSURL (string: "itms-apps://itunes.apple.com/app/id1535149985?action=write-review")! // Replace = Instagram by the your instagram user name
             let instWB: NSURL = NSURL (string: "https://apps.apple.com/app/id1535149985?action=write-review")! // Replace the link by your instagram weblink
@@ -90,11 +90,9 @@ class ProviderLandingPage: UIViewController, UITableViewDelegate, UITableViewDat
             if (UIApplication.shared.canOpenURL(instURL as URL)) {
                     // Open Instagram application
                 UIApplication.shared.open(URL(string: "\(instURL)")!)
-
                 } else {
                     // Open in Safari
                 UIApplication.shared.open(URL(string: "\(instWB)")!)
-
                 }
             
             self.aws.rateApp(uniqueID: self.userId) { (val) in
@@ -102,9 +100,6 @@ class ProviderLandingPage: UIViewController, UITableViewDelegate, UITableViewDat
                 self.rateUs.isHidden = true
                 self.showAlert(title: "COINS CREDITED", message: "Your account was credited 100 coins")
             }
-            
-            
-   
             
         }))
         
@@ -115,23 +110,7 @@ class ProviderLandingPage: UIViewController, UITableViewDelegate, UITableViewDat
         }))
         
         
-        self.present(alert, animated: true)
-
-        
-//        let instURL: NSURL = NSURL (string: "itms-apps://itunes.apple.com/app/id1535149985?action=write-review")! // Replace = Instagram by the your instagram user name
-//        let instWB: NSURL = NSURL (string: "https://apps.apple.com/app/id1535149985?action=write-review")! // Replace the link by your instagram weblink
-//
-//        if (UIApplication.shared.canOpenURL(instURL as URL)) {
-//                // Open Instagram application
-//            UIApplication.shared.open(URL(string: "\(instURL)")!)
-//
-//            } else {
-//                // Open in Safari
-//            UIApplication.shared.open(URL(string: "\(instWB)")!)
-//
-//            }
-        
-        
+        self.present(alert, animated: true)        
     }
     
     

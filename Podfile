@@ -9,7 +9,6 @@ target 'Sika' do
   pod 'SwiftyJSON', '~> 4.0'
   pod 'MSPeekCollectionViewDelegateImplementation'
   pod 'AdGateMedia'
-  pod 'Siren'
   pod 'Firebase/Analytics'
   pod 'Firebase/Messaging'
   pod 'InBrainSurveys'

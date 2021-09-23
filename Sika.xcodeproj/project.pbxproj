@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00F6F0168D6A77445A352726 /* Pods_Sika.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41365808BEB4EF6921CFD54D /* Pods_Sika.framework */; };
+		0A42475E26FCEE4600446BE0 /* IOSVersionUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A42475D26FCEE4600446BE0 /* IOSVersionUpdate.swift */; };
 		0AB2383526CDD588007D54EB /* InbrainAIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB2383426CDD588007D54EB /* InbrainAIViewController.swift */; };
 		0AB2383826CE22EA007D54EB /* ProviderLandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB2383726CE22EA007D54EB /* ProviderLandingPage.swift */; };
 		0AB2383A26CE278E007D54EB /* ProviderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB2383926CE278E007D54EB /* ProviderTableViewCell.swift */; };
@@ -70,6 +71,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A42475D26FCEE4600446BE0 /* IOSVersionUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSVersionUpdate.swift; sourceTree = "<group>"; };
 		0AB1F7D826D7338B00972982 /* KAlert.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KAlert.framework; path = "../Downloads/KCustomAlert-master 2/KAlert.framework"; sourceTree = "<group>"; };
 		0AB2383426CDD588007D54EB /* InbrainAIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InbrainAIViewController.swift; sourceTree = "<group>"; };
 		0AB2383726CE22EA007D54EB /* ProviderLandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderLandingPage.swift; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 				A26A1F5224E0F44A00F40539 /* Extensions */,
 				A26A1F5F24E206F100F40539 /* protocols.swift */,
 				A2CE3F5624E39B5C00318EED /* GlobalVariables.swift */,
+				0A42475D26FCEE4600446BE0 /* IOSVersionUpdate.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -630,6 +633,7 @@
 				A2F8799224E3037C0091940E /* BalanceViewController.swift in Sources */,
 				A2BC9BA32532E0BA00E4CBEA /* FillAnimationView.swift in Sources */,
 				A26A1F6024E206F100F40539 /* protocols.swift in Sources */,
+				0A42475E26FCEE4600446BE0 /* IOSVersionUpdate.swift in Sources */,
 				A2D9C19624E4A5FD00470496 /* PaymentCollectionViewCell.swift in Sources */,
 				A2BC9BA02532E0BA00E4CBEA /* OnboardingContentView.swift in Sources */,
 			);
@@ -800,7 +804,7 @@
 				CODE_SIGN_ENTITLEMENTS = Sika/Sika.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 18;
+				CURRENT_PROJECT_VERSION = 15;
 				DEVELOPMENT_TEAM = 7TX85HAZVQ;
 				ENABLE_BITCODE = NO;
 				EXCLUDED_ARCHS = "";
@@ -810,7 +814,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 4.4;
+				MARKETING_VERSION = 4.8;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sikacoinapp.sika;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -831,7 +835,7 @@
 				CODE_SIGN_ENTITLEMENTS = Sika/Sika.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 18;
+				CURRENT_PROJECT_VERSION = 15;
 				DEVELOPMENT_TEAM = 7TX85HAZVQ;
 				ENABLE_BITCODE = NO;
 				EXCLUDED_ARCHS = "";
@@ -841,7 +845,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 4.4;
+				MARKETING_VERSION = 4.8;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sikacoinapp.sika;
 				PRODUCT_NAME = "$(TARGET_NAME)";
