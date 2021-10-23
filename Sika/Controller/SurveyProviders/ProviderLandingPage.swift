@@ -80,7 +80,7 @@ class ProviderLandingPage: UIViewController, UITableViewDelegate, UITableViewDat
     @IBAction func rateTheApp(_ sender: Any) {
         
         
-        let alert = UIAlertController(title: "Rate $IKA 5☆ Earn 100 Coins!", message: "We put our heart and soul to bring you the best. This will help us provide you higher paying surveys.", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Rate $IKA 5 stars", message: "Rate $IKA 5 stars in the App Store & get rewarded 100 Coins!", preferredStyle: .alert)
         
         alert.addAction(UIAlertAction(title: "Rate", style: .default, handler: { (normal) in
             
