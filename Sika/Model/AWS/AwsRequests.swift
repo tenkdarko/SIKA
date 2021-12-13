@@ -178,16 +178,12 @@ class AwsRequests {
         AF.request(cashOut, parameters: params).responseJSON { (response) in
                         
             let info = JSON(response.data)
-            
-//            print("info", info)
-//            
-//            print("info headers \(response.response?.headers.dictionary)")
-//
-//            print("info item", info["error"].description)
 
+            print("AWS HEADER RESPONSE \(response.response?.headers.dictionary)")
+//
             
             guard info["error"].intValue != 100 else{
-                print("we are in null ")
+                print("CASH OUT: FALSE ")
                 completion(-100) //using as false
                 return
             }
@@ -211,7 +207,7 @@ class AwsRequests {
                     completion(200)
                 return
             }else{
-                completion(-200)
+                completion(200)
             }
         }
     }
